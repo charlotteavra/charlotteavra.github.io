@@ -11554,12 +11554,12 @@ header.masthead .masthead-heading {
 .timeline:before {
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 115px;
   left: 40px;
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #fff;
+  background-color: #dee2e6;
 }
 .timeline > li {
   position: relative;

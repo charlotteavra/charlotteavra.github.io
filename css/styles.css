@@ -11603,8 +11603,21 @@ header.masthead .masthead-heading {
   color: white;
   border: 7px solid #e9ecef;
   border-radius: 100%;
-  background-color: #ffc800;
+  background-color: #fff;
 }
+.timeline > li .timeline-dot {
+  position: absolute;
+  z-index: 100;
+  left: 0;
+  width: 80px;
+  height: 80px;
+  margin-left: 0;
+  text-align: center;
+  color: white;
+  border: 7px solid #e9ecef;
+  border-radius: 100%;
+  background-color: #e9ecef;
+    }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
   line-height: 14px;
@@ -11706,6 +11719,11 @@ header.masthead .masthead-heading {
     height: 170px;
     margin-left: -85px;
   }
+   .timeline > li .timeline-dot {
+    width: 30px;
+    height: 30px;
+    margin-left: -15px;
+   }
   .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
     margin-top: 40px;
   }

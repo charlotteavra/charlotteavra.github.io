@@ -59,6 +59,23 @@
                     <!-- Project 1-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/mouthrobot/1.png" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Robot Sound Classification</div>
+                                <div class="portfolio-caption-subheading text-muted">Learning human-like tonal inflections 
+                                    for studying lip synchronization on a humanoid robot mouth</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -73,7 +90,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 2-->
+                    <!-- Project 3-->
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
@@ -89,7 +106,7 @@
                         </div>
                     </div>
                     
-                    <!-- Project 3-->
+                    <!-- Project 4-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
@@ -105,7 +122,7 @@
                         </div>
                     </div>
                     
-                    <!-- Project 4-->
+                    <!-- Project 5-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
@@ -121,7 +138,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 5-->
+                    <!-- 
                     <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
@@ -136,6 +153,7 @@
                             </div>
                         </div>
                     </div>
+                    -->
 
                     <!-- Project 6-->
                     <div class="col-lg-4 col-sm-6">
@@ -144,7 +162,7 @@
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
                                 </div>
-                                <img class="img-fluid" src="assets/img/portfolio/project_6/1.jpg" alt="..." />
+                                <img class="img-fluid" src="assets/img/portfolio/redwood/1.jpg" alt="..." />
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Redwood Desk Organizer</div>
@@ -359,7 +377,279 @@
 
 
         <!-- Portfolio Modals-->
-        <!-- Portfolio item 1 modal popup-->
+        <!-- Portfolio item modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    
+                                    <!-- Project details-->
+                                    <div class="text-center">
+                                        <h3>Robot Sound Classification</h3>
+                                        <p class="item-intro text-muted">Learning human-like tonal inflections 
+                                            for studying lip synchronization on a humanoid robot mouth</p>
+                                    </div>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/1.png" alt="..." />
+
+                                    <h5>Background:</h5>
+                                    <p class="text-muted">This project attempts to quantify the human-likeness of sound produced by 
+                                        a humanoid robot. The robot has no speakers and produces sound from a variable pitch pneumatic
+                                        sound generator and resonance tube deformed by a series of servo motors along its length. The 
+                                        robot was designed and built by my groupmate, Maddy Weaver, and we used it to study human-like 
+                                        sound using deep learning methods as part of Carnegie Mellon's Introduction to Machine Learning for 
+                                        Engineers course.  
+                                    </p>
+
+                                    <h5>Objectives:</h5>
+                                    <p class="text-muted">The goal of quantifying the human-likeness of audio produced by the robot is 
+                                        we can then use this metric to rate each sound and iteratively update the robot's hardware to 
+                                        produce a more human-like sound.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/2.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 1: Humanoid robot mouth used for this project</p>
+
+                                    <h5>Audio Processing:</h5>
+                                    <p class="text-muted">The way in which data is processed before inputting it into any kind of 
+                                        machine learning or deep learning model is fundamental. In the domain of audio, there are 
+                                        several concepts that aid in data pre-processing.
+                                    </p>
+
+                                    <h6>Mel Spectrograms:</h6>
+                                    <p class="text-muted">Digital representations of audio signals most often begin as the relationship 
+                                        of amplitude and time. However, to extract useful information from these signals, a Fourier 
+                                        transform can be applied to decompose a signal into its individual frequencies and their 
+                                        amplitudes and therefore convert from the time to frequency domain.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/10.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 2: Example audio signal represented by signal amplitude in 
+                                        the time domain as well as in the frequency domain after applying a Fourier transform 
+                                        (Image Source: <a href="https://insightincmiami.org/data-visualization-using-the-fourier-transform/">insightincmiami.org</a>)</p>
+                                        
+                                    <p class="text-muted">Most speech and music signals are non-periodic. This means that to represent 
+                                        these signals in the frequency domain, a Fast Fourier Transform (FFT) is performed over several 
+                                        windowed segments of the signal. What results is called a spectrogram. Spectrograms are 
+                                        visualizations or figures of audio that represent the spectrum of frequencies over time for 
+                                        an audio recording.
+                                    </p>
+
+                                    <p class="text-muted">If frequency is converted from Hertz to the Mel Scale, a representation of 
+                                        frequency that mimics the perception of sound by humans and hence why it is used often in 
+                                        machine learning, the spectrogram is called a Mel Spectrogram.
+                                    </p>    
+    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/3.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 2: Example Mel Spectrograms of a human (left) and our mouth 
+                                        robot producing a high-level tone</p>
+
+                                    <h6>Mel Frequency Cepstral Coefficients:</h6>
+
+                                    <p class="text-muted">The Mel Frequency Cepstrum (MFC) is a discrete cosine transformation (DCT) 
+                                        on the log of the magnitude of the Fourier spectrum which is obtained by applying a Fourier 
+                                        transform on the time signal. MFCC’s are coefficients that collectively make up an MFC. MFCC's 
+                                        visually represent features of the audio remarkably well and therefore can be input into a 
+                                        convolutional neural network for classification.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/4.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 3: Example Mel Frequency Cepstral Coefficients of a human  
+                                        producing a dipping tone (left) and a falling tone (right)</p>
+
+                                    <h5>Data:</h5>
+                                    <h6>Data Collection:</h6>
+                                    <p class="text-muted">My groupmate collected several thousand audio recordings from the robot 
+                                        (Matlab script is available on my GitHub under "matlab data collection"). To construct the 
+                                        dataset, we first structured each data point as a sequence of 3 varied pitches with a 
+                                        repeating open and closed actuation of the mouth. We then populated each sequence with an 
+                                        initial guess of the relative pitch values of a high-level, rising, dipping or a falling tone, 
+                                        then labeled them as such. We executed these tones on the robot and recorded the audio output.
+                                        There was an equal class distribution in these data.  
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/5.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 4: Data collection and automatic labeling process</p>
+
+                                    <p class="text-muted">Data for human audio recordings, which we also experimented with, were 
+                                        sourced from the <a href="https://tone.lib.msu.edu/">Tone Perfect database</a>. Tone Perfect 
+                                        includes 9,840 audio files representing 410 monosyllabic sounds in Mandarin 
+                                        Chinese each recorded from six speakers using four different tones: high-level tone, rising 
+                                        tone, dipping tone, and falling tone. We used 4,500 of these audio files. 
+                                    </p>
+
+                                    <h6>Data Augmentation:</h6>
+                                    <p class="text-muted">The iteration time for updating the robot hardware to test different 
+                                        configurations in the hopes of obtaining a more human-like sound would be long. Therefore, 
+                                        we chose to augment data from the robot in different ways to speed up iteration cycles.
+                                    </p>
+
+                                    <p class="text-muted">1. The data augmentation process included first compressing the audio 
+                                        signal from three seconds to one second. 
+                                    </p>
+
+                                    <p class="text-muted">2. Due to a shortened wavelength when compressing the audio signal, this 
+                                        resulted in an increased pitch. Each audio signal was then pitched down by 1.5 octaves to 
+                                        return to its original pitch. This was based on human perception of the original pitch and 
+                                        was not quantitatively computed.
+                                    </p>
+                                       
+                                    <p class="text-muted">3. The pitch shifting operation caused the decibel level of each 
+                                        signal to be reduced significantly so each signal was increased by 15 decibels.
+                                    </p>
+                                        
+                                    <p class="text-muted">4. The pitch shifting operation caused the decibel level of each signal to 
+                                        be reduced significantly so each signal was increased by 15 decibels.
+                                    </p> 
+
+                                    <p class="text-muted">5. A mic pop at the beginning of each audio signal was removed and 
+                                        A 0.25 second fade in/fade out effect was added to each audio signal to mimic the change 
+                                        in volume that may occur when a human opens and closes their mouth.
+                                    </p>
+
+                                    <div class="row text-center">
+                                        <div class="col-md-6">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/7.png" alt="..." />
+                                        </div>
+
+                                        <div class="col-md-6">
+                                            <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/8.png" alt="..." /> 
+                                        </div>
+                                    </div>
+
+                                    <p class="item-intro text-muted">Fig. 5: Waveplots of example raw robot audio signal and 
+                                        augmented audio signal
+                                    </p>
+
+                                    <p class="text-muted">60 MFCC’s for each audio signal were then computed using the librosa sound 
+                                        processing library, zero padding was applied to ensure square format, and then they were 
+                                        input into the model. 
+                                    </p>
+
+                                    <h5>Model Architecture:</h5>
+                                    <p class="text-muted">The CNN architecture we used was adapted from 
+                                        <a href="https://github.com/adhishthite/sound-mnist">sound-mnist</a> and has 3 
+                                        convolution layers with relu activation and batch normalization after each layer. Then a 
+                                        max pooling layer and dropout followed by 3 fully connected layers the last one having 
+                                        softmax activation.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/9.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 6: CNN architecture used for all experiments</p>
+                                    
+                                    <p class="text-muted">The goal of the model was to learn from MFCC's based on audio produced by humans, 
+                                        specifically 4,500 signals from the Tone Perfect database, and be tested on 1,120 
+                                        MFCC's based on audio produced by the robot to determine if the robot sounds were human-like. 
+                                    </p>
+
+                                    <p class="text-muted">We wanted the model to generalize enough such that it could maintain high 
+                                        accuracy given a validation set of MFCC's that may look very different from what it was trained 
+                                        on, but still reflect the human-likeness of the validation set through its softmax output 
+                                        predictions: high value predictions for human-like sounds and low value predictions for 
+                                        non-human-like sounds. This, however, proved to be a difficult goal. 
+
+                                    <h5>Results:</h5>
+                                    <p class="text-muted">We first show here four examples of the MFCC’s that the model learned and 
+                                        was tested on. 
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/11.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/12.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/13.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/14.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 7: MFCC's visualizing four tonal inflections produced by 
+                                        a human (left) and our mouth robot (right)
+                                    </p>
+                                    
+                                    <h6>Training and Testing on Robot MFCC's:</h6>
+                                    <p class="text-muted">We first split the 1,120 robot MFCC's with 80% (880 MFCC's) for training and 
+                                        20% (220 MFCC's) for validation. When trained on 880 robot audio signals, the validation 
+                                        accuracy was 92.4% as shown in Fig. 8. This proves the model can successfully classify robot 
+                                        MFCC's when trained on them with high accuracy validating the choice of model architecture 
+                                        for the remaining experiments.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/15.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 8: High model performance when trained and validated using only
+                                        robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, Epochs = 30, 
+                                        Batchsize = 20)</p>
+
+                                    <h6>Training on Human MFCC's and Testing on Robot MFCC's:</h6>
+                                    <p class="text-muted">For this experiment, we used all 4,920 human MFCC's for training and 
+                                        validated the model using all 1,120 robot MFCC's. This time, the model had difficulty 
+                                        recognizing features in the validation set and yielded a 25.00% accuracy.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/17.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 9: Poor model performance when trained on human MFCC's and 
+                                        validated using robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, 
+                                        Epochs = 50, Batchsize = 20</p>
+
+                                    <p class="text-muted">At around 33 epochs, the validation loss became greater than the training 
+                                        loss, as shown in Fig. 9, which provides an indication of overfitting in the training data. 
+                                        The training accuracy was above 99% which is another indication the model began to overfit 
+                                        the training data and is therefore unable to generalize. This resulted in heavy overprediction 
+                                        of class 3.
+                                    </p>
+
+                                    <p class="text-muted">The model was then retrained on the human audio signals with 30 epochs, as 
+                                        shown in Fig. 10, in an attempt to limit overfitting. The model performed slightly better with 
+                                        an accuracy of 25.71% and was able to predict tones beyond class 3 but was still largely 
+                                        overpredicting class 3.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/16.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 10: Poor model performance when trained on human MFCC's and 
+                                        validated using robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, 
+                                        Epochs = 30, Batchsize = 20)</p>
+
+                                    <h5>Future Work:</h5>
+                                    <p class="text-muted">As this was only a semester long project, my group wasn't able to run all the 
+                                        experiments we wanted to. For future work, we would look more into updating the hardware 
+                                        by either replacing the bagpipe reed with a sound generation mechanism with a larger span of 
+                                        possible pitches or replacing our air pump with one with a larger span of possible speeds. This 
+                                        would all be in an attempt to manually produce a sound that sounds more human-like, before 
+                                        studying which features a neural network uses to classify each tone. 
+                                    </p>
+
+                                    <p class="text-muted">A deep reinforcement learning approach could also be attempted. As the goal 
+                                        of this algorithm is to maximize the accumulated reward, the agent can ignore possible 
+                                        limitations in hardware as it is solely identifying the best possible combination of actions 
+                                        to determine the optimal policy. 
+                                    </p>
+
+                                    <p class="text-muted">The reward estimation could be directly correlated to the softmax predictions 
+                                        of the model, wherein the predicted value of the desired tone is used as the reward for the 
+                                        agent.
+                                    </p>
+
+                                    <h5>Final Word:</h5>
+                                    <p class="text-muted">This is certainly a unique problem and this project is far from complete. 
+                                        Although the results yielded accuracy lower than we had hoped, we were happy to have chosen
+                                        a challenging project and learned from the time we spent working on it.  
+                                    </p>
+
+
+                                    <div class="text-center">
+                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                            <i class="fas fa-xmark me-1"></i>
+                                            Close Project
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -543,7 +833,7 @@
             </div>
         </div>
 
-        <!-- Portfolio item 2 modal popup-->
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -677,7 +967,7 @@
         </div>
         
 
-        <!-- Portfolio item 3 modal popup-->
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -788,7 +1078,7 @@
         </div>
         
 
-        <!-- Portfolio item 4 modal popup-->
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -837,7 +1127,7 @@
         </div>
         
 
-        <!-- Portfolio item 5 modal popup-->
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -1008,7 +1298,7 @@
         </div>
         
 
-        <!-- Portfolio item 6 modal popup-->
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -1024,7 +1314,7 @@
                                         <p class="item-intro text-muted">Adjustable length desk organizer made of repurposed redwood</p>
                                     </div>
                                     
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/project_6/1.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/1.jpg" alt="..." />
                                     
                                     <h5>Background:</h5>
                                     <p class="text-muted">At one of my internships I sat at a desk right next to an aisleway. I had this idea that I wanted some kind of separator that also doubled as an organizer for some of the tools I used everyday. None of the desk organizers I could find on Amazon were quite what I wanted so when I got home I quickly modeled an idea in Solidworks.</p>
@@ -1032,10 +1322,10 @@
                                     <h5>Objectives:</h5>
                                     <p class="text-muted">I wanted the design to have an elevated surface for my plant to sit on. This, along with compartments to organize my desk items, would create a sort of separator between me and the aisleway next to my desk. I also wanted the freedom to adjust the size of the organizer in case I ended up needing more space on the desktop.</p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/project_6/2.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/2.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6.1: Solidworks model</p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/project_6/3.jpg" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/3.jpg" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6.2: Visualization of two sliding compartments</p>
                                     
                                     <div class="text-center">

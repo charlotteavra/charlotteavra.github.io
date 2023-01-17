@@ -445,7 +445,7 @@
                                     </p>    
     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/3.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 2: Example Mel Spectrograms of a human (left) and our mouth 
+                                    <p class="item-intro text-muted">Fig. 3: Example Mel Spectrograms of a human (left) and our mouth 
                                         robot producing a high-level tone</p>
 
                                     <h6>Mel Frequency Cepstral Coefficients:</h6>
@@ -458,7 +458,7 @@
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/4.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 3: Example Mel Frequency Cepstral Coefficients of a human  
+                                    <p class="item-intro text-muted">Fig. 4: Example Mel Frequency Cepstral Coefficients of a human  
                                         producing a dipping tone (left) and a falling tone (right)</p>
 
                                     <h5>Data:</h5>
@@ -473,7 +473,7 @@
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/5.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 4: Data collection and automatic labeling process</p>
+                                    <p class="item-intro text-muted">Fig. 5: Data collection and automatic labeling process</p>
 
                                     <p class="text-muted">Data for human audio recordings, which we also experimented with, were 
                                         sourced from the <a href="https://tone.lib.msu.edu/">Tone Perfect database</a>. Tone Perfect 
@@ -521,7 +521,7 @@
                                         </div>
                                     </div>
 
-                                    <p class="item-intro text-muted">Fig. 5: Waveplots of example raw robot audio signal and 
+                                    <p class="item-intro text-muted">Fig. 6: Waveplots of example raw robot audio signal and 
                                         augmented audio signal
                                     </p>
 
@@ -539,7 +539,7 @@
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/9.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 6: CNN architecture used for all experiments</p>
+                                    <p class="item-intro text-muted">Fig. 7: CNN architecture used for all experiments</p>
                                     
                                     <p class="text-muted">The goal of the model was to learn from MFCC's based on audio produced by humans, 
                                         specifically 4,500 signals from the Tone Perfect database, and be tested on 1,120 
@@ -561,20 +561,20 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/12.png" alt="..." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/13.png" alt="..." />
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/14.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 7: MFCC's visualizing four tonal inflections produced by 
+                                    <p class="item-intro text-muted">Fig. 8: MFCC's visualizing four tonal inflections produced by 
                                         a human (left) and our mouth robot (right)
                                     </p>
                                     
                                     <h6>Training and Testing on Robot MFCC's:</h6>
                                     <p class="text-muted">We first split the 1,120 robot MFCC's with 80% (880 MFCC's) for training and 
                                         20% (220 MFCC's) for validation. When trained on 880 robot audio signals, the validation 
-                                        accuracy was 92.4% as shown in Fig. 8. This proves the model can successfully classify robot 
+                                        accuracy was 92.4% as shown in Fig. 9. This proves the model can successfully classify robot 
                                         MFCC's when trained on them with high accuracy validating the choice of model architecture 
                                         for the remaining experiments.
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/15.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 8: High model performance when trained and validated using only
+                                    <p class="item-intro text-muted">Fig. 9: High model performance when trained and validated using only
                                         robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, Epochs = 30, 
                                         Batchsize = 20)</p>
 
@@ -585,25 +585,25 @@
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/17.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 9: Poor model performance when trained on human MFCC's and 
+                                    <p class="item-intro text-muted">Fig. 10: Poor model performance when trained on human MFCC's and 
                                         validated using robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, 
                                         Epochs = 50, Batchsize = 20</p>
 
                                     <p class="text-muted">At around 33 epochs, the validation loss became greater than the training 
-                                        loss, as shown in Fig. 9, which provides an indication of overfitting in the training data. 
+                                        loss, as shown in Fig. 10, which provides an indication of overfitting in the training data. 
                                         The training accuracy was above 99% which is another indication the model began to overfit 
                                         the training data and is therefore unable to generalize. This resulted in heavy overprediction 
                                         of class 3.
                                     </p>
 
                                     <p class="text-muted">The model was then retrained on the human audio signals with 30 epochs, as 
-                                        shown in Fig. 10, in an attempt to limit overfitting. The model performed slightly better with 
+                                        shown in Fig. 11, in an attempt to limit overfitting. The model performed slightly better with 
                                         an accuracy of 25.71% and was able to predict tones beyond class 3 but was still largely 
                                         overpredicting class 3.
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/16.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 10: Poor model performance when trained on human MFCC's and 
+                                    <p class="item-intro text-muted">Fig. 11: Poor model performance when trained on human MFCC's and 
                                         validated using robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, 
                                         Epochs = 30, Batchsize = 20)</p>
 
@@ -928,8 +928,8 @@
                                         using Sugru™ and marine grease.</p> 
 
                                     <p class="text-muted">I rolled out small cylinders of Sugru™ and pressed them into all gaps in 
-                                        the external casing as shown in Fig. 5. I then added marine grease to the output shaft, as 
-                                        shown in Fig. 3.11, to ensure water does not enter between the casing and the shaft.</p>
+                                        the external casing and then added marine grease to the output shaft, as 
+                                        shown in Fig. 5, to ensure water does not enter between the casing and the shaft.</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/6.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 5: Waterproofing motor</p>   
@@ -987,7 +987,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/globe/1.JPG" alt="..." />
                                     
                                     <h5>Background:</h5>
-                                    <p class="text-muted">This project presents my CAD models and renders as part of Rensselaer 
+                                    <p class="text-muted">This project presents my designs as part of Rensselaer 
                                         Polytechnic Institute's (RPI) Manufacturing Processes & Systems (MPS) Laboratory course 
                                         focused on exposing students to common manufacturing techniques used in industry (e.g. plastic 
                                         injection molding, CNC machining, metalforming, and automation).</p>
@@ -1057,7 +1057,7 @@
                                     <p class="item-intro text-muted">Fig. 5: Globe connector designed for plastic injection molding</p>
 
                                     <p class="text-muted">An off-centered boss with a 2-56 tapped hole was added to secure the 
-                                        circular PCBa as shown in Fig. 4.8. Small pins were also added to act as support pins 
+                                        circular PCBa as shown in Fig. 6. Small pins were also added to act as support pins 
                                         for the PCBa and lift it off the main surface of the globe connector.</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/globe/7.png" alt="..." />
@@ -1168,7 +1168,7 @@
 
                                         <div class="col-md-4">
                                             <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/electrode/6.png" alt="..." />
-                                            <p class="item-intro text-muted">Fig 3: Benchtop testing allows for neural recording sessions 
+                                            <p class="item-intro text-muted">Fig. 3: Benchtop testing allows for neural recording sessions 
                                                 using a stimulating electrode to simulate neural activity</p>
                                         </div>
                                     </div>
@@ -1201,7 +1201,7 @@
                                     </div>
 
                                     <h5>Approach:</h5>
-                                    <p class="text-muted">To address objective 1, I first designed a subassembly for the probe. Two 
+                                    <p class="text-muted">To address the first objective, I designed a subassembly for the probe. Two 
                                         small translational stages (Thorlabs DT12) are used: one is mounted to the elevated stage and 
                                         allows movement of the arm in the x, and one is mounted to the arm and allows movement of 
                                         clamped substrate in the z.  
@@ -1317,10 +1317,16 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/1.jpg" alt="..." />
                                     
                                     <h5>Background:</h5>
-                                    <p class="text-muted">At one of my internships I sat at a desk right next to an aisleway. I had this idea that I wanted some kind of separator that also doubled as an organizer for some of the tools I used everyday. None of the desk organizers I could find on Amazon were quite what I wanted so when I got home I quickly modeled an idea in Solidworks.</p>
+                                    <p class="text-muted">At one of my internships I sat at a desk right next to an aisleway. I had 
+                                        this idea that I wanted some kind of separator that also doubled as an organizer for some of 
+                                        the tools I used everyday. None of the desk organizers I could find on Amazon were quite what 
+                                        I wanted so when I got home I quickly modeled an idea in Solidworks.</p>
 
                                     <h5>Objectives:</h5>
-                                    <p class="text-muted">I wanted the design to have an elevated surface for my plant to sit on. This, along with compartments to organize my desk items, would create a sort of separator between me and the aisleway next to my desk. I also wanted the freedom to adjust the size of the organizer in case I ended up needing more space on the desktop.</p>
+                                    <p class="text-muted">I wanted the design to have an elevated surface for my plant to sit on. 
+                                        This, along with compartments to organize my desk items, would create a sort of separator 
+                                        between me and the aisleway next to my desk. I also wanted the freedom to adjust the size of 
+                                        the organizer in case I ended up needing more space on the desktop.</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/2.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6.1: Solidworks model</p>

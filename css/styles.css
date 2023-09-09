@@ -213,7 +213,7 @@ ol,
 ul,
 dl {
   margin-top: 0;
-  margin-bottom: 1rem;
+  margin-bottom: 6rem;
 }
 
 ol ol,
@@ -11382,7 +11382,7 @@ p {
   font-weight: 700;
 }
 #mainNav .navbar-brand {
-  color: #000;
+  color: #758467;
   font-family: Georgia, serif;
   font-weight: 500;
   letter-spacing: 0.0625em;
@@ -11576,7 +11576,7 @@ header.masthead .masthead-heading {
   width: 2px;
   margin-left: -1.5px;
   content: "";
-  background-color: #dee2e6;
+  background-color: #dfe6da;
 }
 .timeline > li {
   position: relative;
@@ -11618,7 +11618,7 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #dfe6da;
   border-radius: 100%;
   background-color: #fff;
 }
@@ -11631,9 +11631,9 @@ header.masthead .masthead-heading {
   margin-left: 0;
   text-align: center;
   color: white;
-  border: 7px solid #e9ecef;
+  border: 7px solid #dfe6da;
   border-radius: 100%;
-  background-color: #e9ecef;
+  background-color: #dfe6da;
     }
 .timeline > li .timeline-image h4, .timeline > li .timeline-image .h4 {
   font-size: 10px;
@@ -11670,7 +11670,7 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
-  margin-bottom: 0;
+  margin-bottom: 0rem;
 }
 
 @media (min-width: 768px) {
@@ -11679,7 +11679,7 @@ header.masthead .masthead-heading {
   }
   .timeline > li {
     min-height: 100px;
-    margin-bottom: 100px;
+    margin-bottom: 40px;
   }
   .timeline > li .timeline-panel {
     float: left;

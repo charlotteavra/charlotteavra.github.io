@@ -153,9 +153,6 @@ p, .p {
     line-height: 1.2;
 }
 
-h1, .h1 {
-  font-size: calc(1.375rem + 1.5vw);
-}
 @media (min-width: 1200px) {
   h1, .h1 {
     font-size: 1.5rem;
@@ -3285,8 +3282,8 @@ textarea.form-control-lg {
 
 .btn-dark {
   color: #fff;
-  background-color: #212529;
-  border-color: #212529;
+  background-color: #7c6d58;
+  border-color: #7c6d58;
 }
 .btn-dark:hover {
   color: #fff;
@@ -11773,9 +11770,9 @@ header.masthead .masthead-heading {
   text-align: center;
 }
 .team-member img {
-  width: 20rem;
-  height: 20rem;
-  border: 0.5rem solid rgba(0, 0, 0, 0.1);
+  width: 18rem;
+  height: 18rem;
+  border: 0.5rem solid #dfe6da;
 }
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;

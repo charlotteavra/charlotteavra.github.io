@@ -59,6 +59,22 @@
                     <!-- Project 1-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/sculptbot/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Robotic Clay Sculpting</div>
+                                <div class="portfolio-caption-subheading text-muted">Pre-trained models for deformable object manipulation</div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Project 2-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
                                 <div class="portfolio-hover">
                                     <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
@@ -73,7 +89,7 @@
                         </div>
                     </div>
                     
-                    <!-- Project 2-->
+                    <!-- Project 3-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal1">
@@ -90,7 +106,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 3-->
+                    <!-- Project 4-->
                     <div class="col-lg-4 col-sm-6 mb-4 mb-sm-0">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal5">
@@ -106,7 +122,7 @@
                         </div>
                     </div>
                     
-                    <!-- Project 4-->
+                    <!-- Project 5-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal2">
@@ -122,7 +138,7 @@
                         </div>
                     </div>
                     
-                    <!-- Project 5-->
+                    <!-- Project 6-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal3">
@@ -138,24 +154,7 @@
                         </div>
                     </div>
 
-                    <!-- 
-                    <div class="col-lg-4 col-sm-6 mb-4 mb-lg-0">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/loops/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Neural Implant Thread Imaging</div>
-                                <div class="portfolio-caption-subheading text-muted">Hardware setup and image stitching program for documenting micron-scale implant threads</div>
-                            </div>
-                        </div>
-                    </div>
-                    -->
-
-                    <!-- Project 6-->
+                    <!-- Project 7-->
                     <div class="col-lg-4 col-sm-6">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal6">
@@ -449,6 +448,164 @@
 
         <!-- Portfolio Modals-->
         <!-- Portfolio item modal popup-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-8">
+                                <div class="modal-body">
+                                    
+                                    <!-- Project details-->
+                                    <div class="text-center">
+                                        <h3>Robotic Clay Sculpting</h3>
+                                        <p class="item-intro text-muted">Pre-trained models for deformable object manipulation</p>
+                                        <p class="item-intro text-muted">
+                                            <a href="https://arxiv.org/abs/2309.08728">[PAPER]</a> | 
+                                            <a href="https://sites.google.com/andrew.cmu.edu/sculptbot/home">[WEBSITE]</a>
+                                        </p>
+                                    </div>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/1.jpg" alt="..." />
+
+                                    
+                                    <h5>Background:</h5>
+                                    <p class="text-muted">Deformable objects are prevalent in tasks related to cooking, manufacturing, medical procedures, 
+                                        and more. It is therefore necessary to develop robotic systems that can effectively handle and manipulate 
+                                        deformable objects before being deployed in these environments. However, due to their plastic behavior, 
+                                        deformable objects have complex dynamics. State estimation for deformable objects is also more difficult 
+                                        than for rigid objects that retain a constant shape. Therefore, we present a system that leverages pre-trained point cloud 
+                                        reconstruction models to learn a latent dynamics model for 3D deformable object manipulation.</p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/2.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 1: Deformable objects prevalent in cloth manipulation, cooking,
+                                        computer manufacturing, and medical procedures
+                                    </p>
+                                    
+                                    <h5>Objectives:</h5>
+                                    <p class="text-muted">We chose the task of robotic sculpting of modeling clay to develop a system that can learn
+                                        a latent representation of the object and plan trajectories for sculpting a certain goal shape. The goal shape 
+                                        would be provided to the system as point cloud data.</p>
+                                    
+                                    <h5>Approach:</h5>
+                                    <p class="text-muted">
+                                        Our method for sculpting the modeling clay primarily consists of 3 modules:</p>
+                                        <ul>
+                                            <li>
+                                                <p class="text-muted">Perception: We represent the environment as point cloud data and isolate the 
+                                            modeling clay using position and color-based cropping.</p>
+                                            </li>
+                                            <li>
+                                                <p class="text-muted">Tokenizer: We leverage the tokenizer from <a href="https://arxiv.org/abs/2111.14819">Point-BERT</a>, a pre-trained model 
+                                                    that generalizes the concept of BERT (a family of large language models) to 3D point clouds.</p>       
+                                            </li>
+                                            <li>
+                                                <p class="text-muted">Dynamics Model: We train both a simple physics approximator and a DGCNN token predictor model. The predicted 
+                                                    tokens from the DGCNN along with the predicted centroid point cloud from the physics approximator are then passed through the 
+                                                    Point-BERT dVAE decoder to reconstruct the full dense predicted next state point cloud. 
+                                                </p>
+                                            </li>
+                                        </ul>
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/3.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 2: A visualization of our method for scultping modeling clay that primarily consists of 3 modules</p>
+                                    
+                                    <h6>Perception:</h6>
+                                    <p class="text-muted">We calibrated four workspace cameras and used a global registration algorithm (RANSAC) to first roughly align the point clouds 
+                                        taken by the cameras. We then used iterative closest point (ICP) algorithm for refinement.</p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/4.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 3: A top-down view of workspace with four RGBD cameras (left) and a visualization of the global and local 
+                                        registration algorithms we used for point cloud alignment 
+                                    </p>
+
+                                    <p class="text-muted">The aligned point clouds were then pre-processed to produce a more quality representation. Due to the top-down images we 
+                                        captured from the RGBD cameras, the base of the clay was occluded. We first perform a simple position-based crop to isolate the elevated stage, 
+                                        and use color-based cropping in the LAB colorspace to isolate the clay from the table. We then extract the points closest to the base of the
+                                        clay (by indexing points below a z threshold). We use this shape outline to crop a plane of points to form the bottom of the clay. We combine this 
+                                        base plane with the original cloud to form a fully enclosed point cloud shell. This processing is based on the assumption that the clay
+                                        is always resting on the elevated stage, thus the base of the clay will be at that z-position. Once we have the clay shell, we downsample the 
+                                        point cloud to 2048 points.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/5.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 4: Preprocessing pipeline for point clouds (from left to right) original point cloud, position-based cropping,
+                                        color-based cropping, add base plane, downsample 
+                                    </p>
+
+                                    <h6>Point-BERT Tokenizer:</h6>
+                                    <p class="text-muted">We leverage the tokenizer from Point-BERT, a pre-trained model that generalizes the 
+                                        concept of BERT (a family of large language models) to 3D point clouds, to learn a latent representation of the input point cloud data. Point-BERT is 
+                                        pre-trained on the ShapeNet dataset, a collection of 3D point clouds of 3,135 common categories.  
+                                    </p>
+
+                                    <h6>Dynamics Models:</h6>
+                                    <p class="text-muted">Within this latent space, our simple physics approximator learns to propagate the point cloud based on a grasp action and output 
+                                        a next-state centroid. This dynamics approximator is very light weight, moving the points that are inliers in the approximated gripper trajectory 
+                                        mesh based on the grasp pose.</p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/6.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 5: Light-weight physics-based approximator learns next-state centroid given an initial state and a grasp action 
+                                    </p>
+
+                                    <p class="text-muted">Based on centroid movement, we then predict how features of each point cloud cluster change and deform and output next-state 
+                                        discrete tokens. To do this we train a <a href="https://www.sciencedirect.com/science/article/pii/S0893608018302636">DGCNN</a> token predictor 
+                                        model to predict how each cluster’s point token changes given the grasp action. These next-state discrete tokens are then decoded by the Point-BERT 
+                                        decoder to output a next-state point cloud in real space.</p>
+                                    
+                                    <h6>Data Collection:</h6>
+                                    <p class="text-muted">To train alternate versions of the dynamics models, we collect two separate datasets on a Franka Emika Panda manipulator: a random
+                                        action dataset and human demonstratino dataset. The random action dataset was collected by randomly sampling action parameters and executing the 
+                                        generated grasps. A point cloud of the clay was collected before and after each grasp. The human demonstration dataset collected using kinesthetic 
+                                        teaching where the human controlled the end-effector position, rotation and the distance between the fingertips. A point cloud of the clay was again 
+                                        collected before and after each grasp.
+                                    </p>
+
+                                    <p class="text-muted">During initial data collection, we were noticing the robot grippers would unintentionally pick up the clay rendering it difficult 
+                                        to collect more difficult to collect data in the same trajectory. We designed a small part that would act as an anchor to hold the middle of the 
+                                        clay down to the elevated stage.
+                                    </p>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/8.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 7: CAD model of the data collection setup with the Franka manipulator, elevated stage for the clay (initialized to
+                                        a cylinder), and a small 3D printed screw that acted as an anchor to keep the center relatively restrained to the stage
+                                    </p>
+
+                                    <p class="text-muted">We found that although this slighlty restricted motion of the grippers, it aided greatly in both the random action and human 
+                                        demonstration data collection processes.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/9.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 8: Robot grippers picking up the clay in some orientations when collecting data for the random action dataset (left)
+                                        and the clay being held down by a center anchor (right)
+                                    </p>
+
+                                    <p class="text-muted">We plan action trajectories using model predictive control (MPC) and evaluate the results of different sculpting tasks. The dynamics 
+                                        model trained on the human demonstration dataset had a 16.1% lower mean chamfer distance than the dynamics model trained on  the random action dataset.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/10.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 9: Shapes our human demonstrator was able to achieve with the robot in guiding mode (left) and the shapes output by the 
+                                        human demonstration trained dynamics model combined with MPC and geometric sampling (right)
+                                    </p>
+                                    
+                                    <div class="text-center">
+                                    <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
+                                        <i class="fas fa-xmark me-1"></i>
+                                        Close Project
+                                    </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
                 <div class="modal-content">
@@ -463,10 +620,13 @@
                                         <h3>Robot Mouth Audio Classification</h3>
                                         <p class="item-intro text-muted">Learning human-like tonal inflections 
                                             for studying lip synchronization on a humanoid robot mouth</p>
+                                        <p class="item-intro text-muted">
+                                            <a href="https://github.com/charlotteavra/mouth_robot">[CODE]</a>
+                                        </p>
                                     </div>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/1.png" alt="..." />
-
+                                    
                                     <h5>Background:</h5>
                                     <p class="text-muted">This project attempts to quantify the human-likeness of sound produced by 
                                         a humanoid robot. The robot has no speakers and produces sound from a variable pitch pneumatic
@@ -476,8 +636,8 @@
                                     </p>
 
                                     <h5>Objectives:</h5>
-                                    <p class="text-muted">The goal of quantifying the human-likeness of audio produced by the robot is 
-                                        we can then use this metric to rate each sound and iteratively update the robot's hardware to 
+                                    <p class="text-muted">Our goal was to quantify the human-likeness of audio produced by the robot such 
+                                        that we can use this metric to rate each sound and iteratively update the robot's hardware to 
                                         produce a more human-like sound.
                                     </p>
 
@@ -718,6 +878,7 @@
             </div>
         </div>
 
+
         <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -902,6 +1063,7 @@
             </div>
         </div>
 
+
         <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -924,18 +1086,13 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/1.png" alt="..." />
                                     
                                     <h5>Background:</h5>
-                                    <p class="text-muted">This project was part of Rensselaer Polytechnic Institute’s Engineering 
-                                        Innovation for Society (EIS) Blitz which is a condensed 4-week challenge offered as part of 
-                                        the Inventors’ Studio 2 capstone course. The purpose of the challenge is to quickly work 
-                                        through the Lean Design for Six Sigma process. The theme for this semester encouraged students 
-                                        to look at the impact humans are making on marine ecosystems.  
-                                    </p>
-
                                     <p class="text-muted">
-                                        My team and I decided to focus our design on kelp forests. Kelp forests are currently diminishing 
-                                        off the western coast of the United States and Mexico due to warming waters and overfishing of 
-                                        white abalone. The white abalone diet consists of algae that grows on rock surfaces on the ocean 
-                                        floor. Abalone therefore help to clear rocky surfaces providing an optimal place for kelp to grow. 
+                                        Kelp forests are currently diminishing off the western coast of the United States and Mexico due to 
+                                        warming waters and overfishing of white abalone. Kelp forests reduce wave energy therefore decreasing 
+                                        the effects of coastal erosion which can wash away homes and the natural coastline. They are also home 
+                                        to large populations of sea lions, starfish, and white abalone. The white abalone diet consists of algae, 
+                                        which abalone clean from rock surfaces on the ocean floor providing an optimal place for kelp to grow. 
+                                        Overfishing of white abalone therefore leads to algae overgrowth and threatens the health of kelp forests.
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/10.png" alt="..." />
@@ -946,16 +1103,16 @@
                                     
                                     <h5>Objective:</h5>
                                     <p class="text-muted">To address the overgrowth of algae due to the decreasing population of 
-                                        white abalone, my team and I decided to create an algae filtration system to mimic the 
-                                        abilities of a white abalone. The system would work in conjunction with current efforts to 
-                                        reduce overfishing of white abalone, seed white abalone in restored kelp forests, and require 
-                                        preventative action against climate change.</p>
+                                        white abalone, my team and I designed and built a prototype algae filtration system that mimics 
+                                        the abilities of white abalone to clean rock surfaces of algae. The system would work in conjunction 
+                                        with current efforts to reduce overfishing of white abalone, seed white abalone in restored kelp forests, 
+                                        and require preventative action against climate change.</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/2.PNG" alt="..." />
                                     <p class="item-intro text-muted">Fig. 2: Full CAD Assembly of System</p>
 
                                     <h5>Approach:</h5>
-                                    <p class="text-muted">The idea behind the algae filtration system is that it will be secured to 
+                                    <p class="text-muted">Our algae filtration system is designed to be secured to 
                                         the rock surfaces in endangered kelp forests via a strong suction cup. It will then be able 
                                         to clean the rock surfaces of algae using a motor-powered brush located on the bottom of the 
                                         system. After the brush releases the algae from the rock surface, a motor-powered turbine will 
@@ -1043,7 +1200,6 @@
             </div>
         </div>
         
-
         <!-- Portfolio item modal popup-->
         <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
             <div class="modal-dialog">
@@ -1139,55 +1295,6 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/globe/7.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6: Globe connector supporting circular PCBa</p>
-
-                                    <div class="text-center">
-                                        <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
-                                            <i class="fas fa-xmark me-1"></i>
-                                            Close Project
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-
-        <!-- Portfolio item modal popup-->
-        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="close-modal" data-bs-dismiss="modal"><img src="assets/img/close-icon.svg" alt="Close modal" /></div>
-                    <div class="container">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-8">
-                                <div class="modal-body">
-                                    
-                                    <!-- Project details-->
-                                    <div class="text-center">
-                                        <h3>Neural Implant Thread Imaging</h3>
-                                        <p class="item-intro text-muted">Hardware setup and image stitching program for 
-                                            documenting micron-scale implant threads</p>
-                                    </div>
-                                    
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/loops/1.jpg" alt="..." />
-                                    
-                                    <h5>Background:</h5>
-                                    <p class="text-muted">
-                                        I developed this imaging station as part of my mechanical engineering internship at Neuralink, 
-                                        a neurotechnology company in Fremont, California developing brain machine interfaces. 
-                                    </p>
-
-                                    <p class="text-muted">The N1 is a neural implant containing 
-                                        micon-scale threads that are inserted into the motor cortex, a region of the frontal lobe that 
-                                        is responsible for planning and executing motor movements, via a high-precision surgical robot. 
-                                        The robot employs a needle that sews the threads into the brain by grabbing onto a small loop 
-                                        located at the end of each thread.
-                                    </p>
-
-                                    <h6>Rest of Project Description in Progress...</h6>
 
                                     <div class="text-center">
                                         <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -1394,22 +1501,46 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/1.jpg" alt="..." />
                                     
                                     <h5>Background:</h5>
-                                    <p class="text-muted">At one of my internships I sat at a desk right next to an aisleway. I had 
-                                        this idea that I wanted some kind of separator that also doubled as an organizer for some of 
-                                        the tools I used everyday. None of the desk organizers I could find on Amazon were quite what 
-                                        I wanted so when I got home I quickly modeled an idea in Solidworks.</p>
+                                    <p class="text-muted">At one of my internships I sat at a desk right next to an aisleway which sometimes
+                                        got very busy and distracting. I had this idea that I wanted some kind of separator that also doubled 
+                                        as an organizer for some of the tools I used everyday. None of the desk organizers I could find on 
+                                        Amazon were quite what I wanted so when I got home I quickly modeled my idea.</p>
 
                                     <h5>Objectives:</h5>
                                     <p class="text-muted">I wanted the design to have an elevated surface for my plant to sit on. 
-                                        This, along with compartments to organize my desk items, would create a sort of separator 
-                                        between me and the aisleway next to my desk. I also wanted the freedom to adjust the size of 
+                                        This, along with compartments to organize my desk items, would act as a separator 
+                                        between my desk and the aisleway next to my desk. I also wanted the freedom to adjust the size of 
                                         the organizer in case I ended up needing more space on the desktop.</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/2.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 6.1: Solidworks model</p>
+                                    <p class="item-intro text-muted">Fig. 1: Initial CAD model</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/3.jpg" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 6.2: Visualization of two sliding compartments</p>
+                                    <p class="item-intro text-muted">Fig. 2: Visualization of two sliding compartments</p>
+                                    
+                                    <h5>Approach:</h5>
+                                    <p class="text-muted">I used repurposed redwood from an old play structure in my backyard that my dad 
+                                        had recently dissasembled. We first rip cut large pieces of the wood such that they were the correct width
+                                        and depth for the boards I needed. I then used the table saw to cut grooves in the vertical standing 
+                                        boards for a through dado joint. These joints would better support the shelving than a butt joint.</p>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/4.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 3: Joint used to support shelving</p>
+                                    
+                                    <p class="text-muted">I then assempled all the pieces applying a generous amount of wood glue between each,
+                                        and clamped them together. After about 48 hours, I sanded the entire strucutre including any excess wood glue 
+                                        from the joints and applied a polyurethane finish to protect the wood from water that might leak from the plant.</p>    
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/5.jpg" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 4: Applying a wipe-on polyurethane finish to protect the wood from water</p>
+                                    
+                                    <p class="text-muted">I am overall very satisfied with how it turned out and used it for the rest of my internship.
+                                    </p>    
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/7.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 5: The completed organizer on my desk where I use it to store tools I used daily 
+                                        and display my very quickly growing plant
+                                    </p>
                                     
                                     <div class="text-center">
                                         <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">

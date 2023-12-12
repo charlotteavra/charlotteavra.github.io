@@ -183,6 +183,14 @@
                 </div>
                 
                 <div class="text-center">
+                    <a href="resume/cavra_1210_resume.pdf">
+                        <button class="btn btn-primary btn-xl text-uppercase" type="button">
+                        View as PDF
+                        </button>
+                    </a>
+                </div>  
+                
+                <div class="text-center">
                     <h1>Experience</h1>
                 </div>
 
@@ -488,7 +496,7 @@
                                         a latent representation of the object and plan trajectories for sculpting a certain goal shape. The goal shape 
                                         would be provided to the system as point cloud data.</p>
                                     
-                                    <h5>Approach:</h5>
+                                    <h5>Method:</h5>
                                     <p class="text-muted">
                                         Our method for sculpting the modeling clay primarily consists of 3 modules:</p>
                                         <ul>
@@ -581,6 +589,7 @@
                                         and the clay being held down by a center anchor (right)
                                     </p>
 
+                                    <h5>Evaluation:</h5>
                                     <p class="text-muted">We plan action trajectories using model predictive control (MPC) and evaluate the results of different sculpting tasks. The dynamics 
                                         model trained on the human demonstration dataset had a 16.1% lower mean chamfer distance than the dynamics model trained on  the random action dataset.
                                     </p>
@@ -691,7 +700,7 @@
                                     <p class="item-intro text-muted">Fig. 4: Example Mel Frequency Cepstral Coefficients of a human  
                                         producing a dipping tone (left) and a falling tone (right)</p>
 
-                                    <h5>Data:</h5>
+                                    <h5>Method:</h5>
                                     <h6>Data Collection:</h6>
                                     <p class="text-muted">We first collected several thousand audio recordings from the robot. To construct the 
                                         dataset, we first structured each data point as a sequence of 3 varied pitches with a 
@@ -759,7 +768,7 @@
                                         input into the model. 
                                     </p>
 
-                                    <h5>Model Architecture:</h5>
+                                    <h6>Model Architecture:</h6>
                                     <p class="text-muted">The CNN architecture we used was adapted from 
                                         <a href="https://github.com/adhishthite/sound-mnist">sound-mnist</a> and has 3 
                                         convolution layers with relu activation and batch normalization after each layer. Then a 
@@ -781,7 +790,7 @@
                                         predictions: high value predictions for human-like sounds and low value predictions for 
                                         non-human-like sounds. This, however, proved to be a difficult goal. 
 
-                                    <h5>Results:</h5>
+                                    <h5>Evaluation:</h5>
                                     <p class="text-muted">We first show here four examples of the MFCC’s that the model learned and 
                                         was tested on. 
                                     </p>
@@ -836,7 +845,8 @@
                                         validated using robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, 
                                         Epochs = 30, Batchsize = 20)</p>
 
-                                    <h5>Future Work:</h5>
+                                    <h5>Conclusion:</h5>
+                                    <h6>Future Work:</h6>
                                     <p class="text-muted">As this was only a semester long project, we weren't able to run all the 
                                         experiments we wanted to. For future work, we would look more into updating the hardware 
                                         by either replacing the bagpipe reed with a sound generation mechanism with a larger span of 
@@ -856,7 +866,7 @@
                                         agent.
                                     </p>
 
-                                    <h5>Final Word:</h5>
+                                    <h6>Final Word:</h6>
                                     <p class="text-muted">This is certainly a unique problem and this project is far from complete. 
                                         Although the results yielded accuracy lower than we had hoped, we were happy to have chosen
                                         a challenging project and learned from the time we spent working on it.  
@@ -1338,7 +1348,8 @@
                                     
                                     <h5>Background:</h5>
                                     <p class="text-muted">I designed and built this testing setup for the Panat Lab at Carnegie Mellon 
-                                        University. The lab is developing a microelectrode array fabricated from depositing metal 
+                                        University. In a collaborative effort, the lab is developing a microelectrode array, the <a href="https://www.science.org/doi/full/10.1126/sciadv.abj4853">CMU Array</a>, 
+                                        fabricated from depositing metal 
                                         nanoparticles onto a substrate. The long, narrow shanks are then sintered to create conductive 
                                         paths for bioelectric signals.
                                     </p>
@@ -1465,6 +1476,8 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/electrode/15.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 11: Assembled Substrate Clamp</p>
                                     
+                                    <h5>Evaluation:</h5>
+                                    
                                     <p class="text-muted">Camera positioning is crucial for the test as the XYZ stage also moves the 
                                         electrode wire for stimulating each probe. Example photos I took to test camera positioning
                                         are shown in Fig. 12.
@@ -1472,6 +1485,16 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/electrode/16.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 12: Positioning Cameras</p>
+                                    
+                                    <p class="text-muted">Unfortunately, my internship in the lab ended before I could conduct further testing, 
+                                        but potential future evaluations could involve rigorous testing of long-term stability, real-time 
+                                        data processing capabilities, and correlation studies with in vivo experiments.</p>
+                                    
+                                    <h5>Conclusion:</h5>
+                                    <p class="text-muted">
+                                        The microelectrode array testing setup I designed and built allows for benchtop testing with a stimulating 
+                                        electrode, reducing variability and eliminating the need for live animals.  
+                                    </p>
                                     
                                     <div class="text-center">
                                         <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">

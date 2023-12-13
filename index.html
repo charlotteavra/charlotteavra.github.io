@@ -594,7 +594,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/long_dynamics.png" alt="..." />
 
                                     <p class="text-muted">Given the <code>A</code> and <code>B</code> matrices, I then discretize the lateral state space model 
-                                        using <code>signal.cont2discrete(system=(A,B,C,D))</code>, where <code>C</code> is an identidy matrix with the same size as 
+                                        using <code>signal.cont2discrete(system=(A,B,C,D))</code>, where <code>C</code> is an identity matrix with the same size as 
                                         <code>A</code>, and <code>D</code> is a matrix of zeros with the same size as <code>B</code>. I then tune 
                                         my <code>Q</code> and <code>R</code> matrices before solving the discrete-time algebraic Riccati equation (ARE) using 
                                         <code>linalg.solve_discrete_are(A, B, Q, R)</code>. Lastly, we can define the LQR gain as:</p>
@@ -602,6 +602,16 @@
                                     
                                     <p class="text-muted">and compute the control outputs using:</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/input.png" alt="..." />
+                                    
+                                    <h6>PID Controller for Longitudinal Control:</h6>
+                                    <p class="text-muted">For the PID controller, I define a minimum and maximum speed as <code>speed_min</code> and <code>speed_max</code>, 
+                                        chosen emperically. I then compute the curvature of the track at the current location using the closest waypoint and a waypoint at a 
+                                        certain look ahead distance (also defined emperically), and set the <code>ideal_speed</code> of the car to be 
+                                        <code>max(speed_min, min(speed_max, (1/curvature)))</code>. Then, the <code>speed_error</code> is simply <code>(ideal_speed-current_speed)</code>, 
+                                        the integrated speed error is <code>total_speed_error</code>, and the derivative of the speed error is <code>speed_error_rate</code>. Lastly, 
+                                        I tune my PID gains <code>Kp</code>, <code>Ki</code>, and <code>Kd</code>, and compute the output throttle: 
+                                        <code>F = (Kp*speed_error) + (Ki*total_speed_error) + (Kd * speed_error_rate)</code>.
+                                    </p>
                                     
                                     <h6>A* Path Planning for Obstacle Avoidance:</h6>
                                     <p class="text-muted">Obstacle avoidance is crucial in autonomous vehicle control. In the previous example, there was only 
@@ -612,8 +622,9 @@
                                     <p
                                      class="text-muted">To re-plan the trajectory, we can first compute the H, G, and F values of the known start node, and 
                                         add it to the open heap queue using <code>heappush(open_list, start_node)</code>. I then implement a loop to continue 
-                                        searching the map until the shortest path to the end node is reached as explained starting at 7:35 in 
-                                        <a href="https://youtu.be/-L-WgKMFuhE?si=lchF4JSsQKhJp_MY&t=455">this video</a>.
+                                        searching the map until the shortest path to the end node is reached. Starting at 7:35 in 
+                                        <a href="https://youtu.be/-L-WgKMFuhE?si=lchF4JSsQKhJp_MY&t=455">this video</a>, there is a great explanation of this 
+                                        search.
                                     </p>
                                     
                                     <!-- <p class="text-muted">Finally, in the previous implementations, we are given the global coordinates of the 

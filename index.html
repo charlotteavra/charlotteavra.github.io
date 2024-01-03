@@ -66,10 +66,8 @@
                                 <img class="img-fluid" src="assets/img/portfolio/bookshelf/5.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Nonprehensile Manipulation for Shelf Organization</div>
-                                <div class="portfolio-caption-subheading text-muted">Planning robot pushing
-                                    motions, enabling the reorganization of boxes leaning
-                                    on a shelf</div>
+                                <div class="portfolio-caption-heading">Robot Librarian</div>
+                                <div class="portfolio-caption-subheading text-muted">Nonprehensile manipulation for shelf organization</div>
                             </div>
                         </div>
                     </div>
@@ -84,7 +82,7 @@
                                 <img class="img-fluid" src="assets/img/portfolio/buggy/1.png" alt="..." />
                             </a>
                             <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Path Planning and Control for Autonomous Vehicle</div>
+                                <div class="portfolio-caption-heading">Linear Control and Path Planning of Autonomous Vehicle</div>
                                 <div class="portfolio-caption-subheading text-muted">Controllers for lateral and
                                     longitudinal control of a Tesla Model 3 in Webots</div>
                             </div>
@@ -402,7 +400,14 @@
                     <div class="row text-left">
                         <div class="col-md-4">
                             <h5 class="my-3">Programming:</h5>
-                            <p class="text-muted">Python (incl. OpenCV), C++ (incl. OpenGL), MATLAB & Simulink, Arduino, Git</p>
+                            <p class="text-muted">Python (incl. OpenCV, SciPy, control), C++ (incl. OpenGL), MATLAB & Simulink, 
+                                Arduino, Git</p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="my-3">Robotics & Control Systems:</h5>
+                            <p class="text-muted">Design of state feedforward/feedback, optimal, and stochastic controllers and observers 
+                                (PID, pole placement, LQR, Kalman filter, MRAC approaches), A* path planning, Hardware (incl. Motors, Actuators, Sensors)</p>
                         </div>
 
                         <div class="col-md-4">
@@ -411,18 +416,15 @@
                                     Design for Plastic Injection Molding</p>
                         </div>
 
-                        <div class="col-md-4">
-                            <h5 class="my-3">Machine Learning and Data Analysis:</h5>
-                            <p class="text-muted">PyTorch, skikit learn, Tensorflow, keras, MediaPipe, librosa (audio analysis), 
-                                    Pandas, Matplotlib</p>
-                        </div>
                     </div>
 
                     <div class="row text-left">
                         <div class="col-md-4">
-                            <h5 class="my-3">Robotics Hardware:</h5>
-                            <p class="text-muted">Franka Emika Panda, UFACTORY xArm, Motors, Actuators, Sensors</p>
+                            <h5 class="my-3">Machine Learning and Data Analysis:</h5>
+                            <p class="text-muted">PyTorch, scikit learn, Tensorflow, keras, MediaPipe, librosa (audio analysis), 
+                                    Pandas, Matplotlib</p>
                         </div>
+
                         <div class="col-md-4">
                             <h5 class="my-3">Prototyping Processes:</h5>
                             <p class="text-muted">SLA and FDM 3D Printing, Laser Cutting, Vacuum Forming, Woodworking</p>
@@ -502,57 +504,103 @@
                                     
                                     <!-- Project details-->
                                     <div class="text-center">
-                                        <h3>Nonprehensile Manipulation for Shelf Organization</h3>
-                                        <p class="item-intro text-muted">Planning robot pushing
-                                            motions, enabling the reorganization of boxes leaning
-                                            on a shelf</p>
+                                        <h3>Robot Librarian</h3>
+                                        <p class="item-intro text-muted">Nonprehensile manipulation for shelf organization</p>
                                     </div>
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/5.png" alt="..." />
                                     
                                     <h5>Background:</h5>
                                     <p class="text-muted">
-                                        Nonprehensile manipulation refers to manipulation not adapted for or not involving grasping or seizing. 
-                                        It therefore leverages a wider variety of primitives, such as pushing, sliding, rolling, and tipping. 
-                                        Nonprehensile manipulation also exploits the dynamics of the problem more than prehensile manipulation, 
-                                        thereby allowing for certain motions that would otherwise be difficult or 
-                                        even impossible with only a grasping primitive. However, 
-                                        this wider variety of primitives can also lead to challenges in 
+                                        Nonprehensile manipulation refers to manipulation not adapted for or not involving antipodal grasping. 
+                                        It therefore leverages a wider variety of primitives, such as pushing, sliding, rolling, and tipping 
+                                        often allowing for certain object interactions that would otherwise be difficult or even impossible with 
+                                        only a grasping primitive. However, this wider variety of primitives can also lead to challenges in 
                                         robotic sensing and control whereby sensitivities like geometry, mass, and friction become more of an issue.
+                                    </p>
+                                    <p class="text-muted">
+                                        Shelves present a unique challenge in robotics as their confined spaces often limit manipulability and 
+                                        graspability of the objects inside. These challenges are present in real-world scenarios, especially in 
+                                        dynamic environments like kitchens, warehouses, and retail spaces, that demand versatile interactions.
                                     </p>
 
                                     <h5>Objectives:</h5>
                                     <p class="text-muted">
-                                        We investigate a shelf organization task and find efficient robot-pushing motions, enabling the reorganization 
-                                        of boxes leaning on a shelf to create space for an additional box. Shelves present a unique challenge because the confined spaces often limit manipulability and graspability of 
-                                        the objects inside. These challenges are present in real-world scenarios, especially in dynamic environments 
-                                        like kitchens, warehouses, and retail spaces, that demand versatile interactions.
+                                        In this project, my team and I investigated a shelf organization task and planned efficient robot-pushing 
+                                        motions, enabling the reorganization of boxes leaning on a shelf to create space for an additional box. 
+                                        Given the first box is placed vertically and the second box is placed at a random angle, the task is to 
+                                        plan a nonprehensile push motion to tilt the second box until it is vertical, allowing for a third box to 
+                                        be placed. 
                                     </p>
-
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/2.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 1: Example cases of leaning boxes that we investigated. There is no space in the
-                                        current configuration for the third box to be placed. The robot must execute a nonprehensile 
-                                        pushing motion to create space for the third box</p>
 
                                     <h5>Method:</h5>
                                     <p class="text-muted">
+                                        We first categorized the possible box configurations within the project scope into 4 cases:
+                                    </p>
+                                    <ul>
+                                        <li>
+                                            <p class="text-muted">
+                                                Case 1: Indicates there is space to insert a third box with no collisions (boxes 1 and 2 
+                                                are treated as obstacles)
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="text-muted">
+                                                Case 2: Indicates the third box can be placed by treating boxes 1 and 2 as movable rigid
+                                                bodies
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="text-muted">
+                                                Case 3: Indicates there is no space in the current configuration for the third box to
+                                                be placed. The robot must execute a nonprehensile pushing motion to create space for
+                                                the third box.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="text-muted">
+                                                Case 4: Indicates all three boxes are in the goal configuration: vertical orientation 
+                                                inside the bookshelf.
+                                            </p>
+                                        </li>
+                                    </ul>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/6.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 1: Examples of cases 1-4 (from left to right). The blue 
+                                        highlighted region indicates a space large enough to place the third box. 
+                                    </p>
+
+                                    <p class="text-muted">
+                                        Fig. 2 illustrates the general pipeline of our framework. We learned a classifier that determines 
+                                        whether of not a box can be successfully placed in a target location given a depth image of the 
+                                        environment. The classifier was trained on depth images collected from simulation of the scene 
+                                        initialized with different box configurations. The images were automatically labeled by first 
+                                        checking if all three boxes were within the boundaries of the shelf at the end of the robot
+                                        action, and whether the two initially placed boxes had moved greater than a threshold distance.      
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/flowchart.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 2: General framework of our approach 
+                                    
+                                    <h6>Sampling-based Approach:</h6>
+                                    <p class="text-muted">
                                         I explored our first approach for planning an efficient robot-pushing motion which involved uniform random 
                                         sampling of contact points on the surface of the box, simulating a push from that location, and evaluating 
-                                        the quality of the push. This approach is uninformed, meaning it does not exploit any specific knowledge of the goal and only makes 
-                                        decisions based on what is immediately visible in the current state. It therefore also does not guarantee 
-                                        a successful push given a certain box configuration. However, it provides a starting point for later, more 
-                                        informed approaches.   
+                                        the quality of the push. This approach is uninformed, meaning it does not exploit any specific knowledge of 
+                                        the goal and only makes decisions based on what is immediately visible in the current state. It therefore 
+                                        also does not guarantee a successful push given a certain box configuration. However, it provides a starting 
+                                        point for later, more informed approaches.   
                                     </p>
 
                                     <p class="text-muted">
                                         We capitalize on the assumption that a physics simulator (PyBullet) can be used within the planning loop to 
-                                        evaluate pushing actions. I first randomly sampled 1000 contact points on the inclined box. An end-effector pose was then defined for each 
-                                        contact point using the (x,y,z) coordinates of the contact point and constraining the orientation to vertical with respect 
-                                        to the world frame as shown in Fig. 2. 
+                                        evaluate pushing actions. I first randomly sampled 200 contact points on the inclined box. An end-effector 
+                                        pose was then defined for each contact point using the (x,y,z) coordinates of the contact point and 
+                                        constraining the orientation to vertical with respect to the world frame as shown in Fig. 3. 
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/3.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 2: Sampling contact points from surface of angled box and defining end-effector 
+                                    <p class="item-intro text-muted">Fig. 3: Sampling contact points from surface of angled box and defining end-effector 
                                         pose based on sampled point</p>
 
                                     <p class="text-muted">
@@ -561,35 +609,68 @@
                                         Conversely, if the configuration was collision-free, the push was executed using a simple motion primitive defined as 
                                         a straight-line movement along the world frame x-axis, opposing the x normal of the sampled point, effectively 
                                         pushing against the surface of the box. The heuristic used to evaluate the push was a score proportional to the distance 
-                                        between the final orientation of the box, p, and the goal vertical orientation, q, both represented as quaternions:
+                                        between the final orientation of the box, <code>p</code>, and the goal vertical orientation, <code>q</code>, both 
+                                        represented as quaternions:
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/score.png" alt="..." />
 
-                                    <h5>Evaluation:</h5>
+                                    <h6>Search-based Approach:</h6>
                                     <p class="text-muted">
-                                        We ran 50 randomly generated trials with a maximum planning time of 60 seconds and recorded the success rate and planning 
-                                        time. In each trial, the first box is placed vertically, and the second box is placed at a random angle between <code>(-pi/4, -pi/6)</code> 
-                                        and <code>(pi/6, pi/4)</code>. The uninformed sampling approach achieved a 6% success rate given the time limit, and a mean planning time of 25.1 seconds. 
-                                        The success rate and planning time for this approach also depeneded heavily on the box orientation, with certain box orientations 
-                                        resulting in higher success rates than others. 
+                                        Unfortunately, the previous approach does not exploit any specific knowledge of the goal to make decisions. 
+                                        To take a more informed approach, I also attempted a search-based method. Similar to the previous appraoch, 
+                                        I use the physics simulator within the planning loop.
                                     </p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/result_gif_1.gif" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 3: Example of a successful push action (score = 0.998)</p>
-                                    
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/result_gif_fail.gif" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 4: Example of a failed push action (score = 0.794)</p>
-                                    
-                                    <h5>Future Work:</h5>
                                     <p class="text-muted">
-                                        A more informed search-based method is ideal for this problem. Instead of uniformally sampling points over the 
-                                        surface of the angled box, we can discretize the surface of the box into a grid of points, then reduce the grid 
-                                        to only contact points defined as points on the grid where a push is possible. We can use a heuristic similar 
-                                        to the scoring function used in the sampling-based approach, but use <code>1-score</code> to define a "cost-to-go" 
-                                        estimation such that lower cost-to-go estimations will be explored earlier. Additionally, a more sophisticated 
-                                        heuristic could also be investigated as well as a more sophisticated push motion primitive. 
+                                        I first discretized the surface of the box into a grid of points as shown in Fig. 4. I then used an A* 
+                                        search to find the optimal path to the goal node, which represents the physical location on the box 
+                                        from which to initiate a push. I used a heuristic similar to the scoring function used in the 
+                                        sampling-based approach to define a "cost-to-go" estimation such that nodes with lower cost-to-go 
+                                        estimations will be explored earlier. <code>p</code> is again the final orientation of the box and 
+                                        <code>q</code> is the goal vertical orientation, both represented as quaternions: 
                                     </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/heuristic.png" alt="..." />
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/grid.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 4: Discretizing box surface into grid of contact points</p>
+                                    
+                                    <p class="text-muted">
+                                        I again used a straight-line push motion primitive when evaluating push actions but I changed the 
+                                        orientation of the end-effector to be parallel with the surface of the box instead of vertical with 
+                                        respect to the world frame. The discretized points are organized as a <code>numpy.meshgrid</code>. 
+                                        In the planning loop, the successors of each node are simply the eight neighbors of the current node.  
+                                    </p>
+
+                                    <h5>Evaluation:</h5>
+                                    <p class="text-muted">
+                                        We ran 50 randomly generated trials and recorded the average plannning time and success rate. In each 
+                                        trial, the first box is placed vertically, and the second box is placed at a random angle between 
+                                        <code>(-pi/4, -pi/6)</code> and <code>(pi/6, pi/4)</code>. We then run 100 steps of the simulation to allow 
+                                        the boxes to settle. 
+                                    </p>
+
+                                    <h6>Sampling-based Approach:</h6>
+                                    <p class="text-muted">
+                                        The uninformed sampling approach achieved a 20% success rate across all 50 trials, and an average planning 
+                                        time of 25.1 seconds.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/sample_gif_success.gif" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 5: Example of a successful push action (score = 0.998)</p>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/sample_gif_fail.gif" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 6: Example of a failed push action (score = 0.794)</p>
+                                    
+                                    <h6>Search-based Approach:</h6>
+                                    <p class="text-muted">
+                                        The success rate increased to 78% for the search-based approach and the planning time reduced by approximately 
+                                        20 seconds, with an average planning time of 5.08 seconds per trial, compared to the sampling-based approach.
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/search_gif_2.gif" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 7: Example of a successful push action (h(s) = 0.0042)</p>
                                     
                                     <h5>Conclusion:</h5>
                                     <p class="text-muted">
@@ -598,10 +679,12 @@
                                         dynamics, thereby allowing for certain object motions that would otherwise be difficult or even impossible with only 
                                         a grasping primitive. We explore nonprehensile manipulation in a confined shelf environment where various tasks, 
                                         such as inserting and organizing are difficult when constrained to prehensile manipulation only. We find that 
-                                        our uninformed sampling approach can reach the goal condition in some cases, but a more informed approach that 
-                                        exploits knowledge of the problem is ideal for increasing success rate and decreasing planning time.  
+                                        our search-based approach performs significantly better than our uninformed sampling approach by increasing success 
+                                        rate and decreasing planning time. For future work, a more sophisticated heuristic could be investigated as well 
+                                        as a more sophisticated push motion primitive.   
                                     </p>
-                                    
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/7.png" alt="..." />
                                     
                                     <div class="text-center">
                                         <button class="btn btn-primary btn-xl text-uppercase" data-bs-dismiss="modal" type="button">
@@ -629,7 +712,7 @@
                                     
                                     <!-- Project details-->
                                     <div class="text-center">
-                                        <h3>Path Planning and Control for Autonomous Vehicle</h3>
+                                        <h3>Linear Control and Path Planning of Autonomous Vehicle</h3>
                                         <p class="item-intro text-muted">Controllers for lateral and
                                             longitudinal control of a Tesla Model 3 in Webots</p>
                                     </div>
@@ -643,9 +726,30 @@
                                         autonomous operation.</p>
 
                                     <h5>Objectives:</h5>
-                                    <p class="text-muted">The goal of this project was to develop an optimal for lateral and longitudinal control 
-                                        of a simulated Tesla Model 3 in Webots making use of the kinematic bicycle model, shown in Fig. 1, for studying 
-                                        the vehicle's dynamics. The car drives around a track with the same geometry as the CMU buggy course. Buggy is 
+                                    <p class="text-muted">The goal of this project was to:</p>
+                                    <ul>
+                                        <li>
+                                            <p class="text-muted">
+                                                Develop an optimal controller for lateral and longitudinal control of a simulated Tesla Model 3 in 
+                                                Webots making use of the kinematic bicycle model, shown in Fig. 1, for studying the vehicle's dynamics.
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="text-muted">
+                                                Implement the A* path planning algorithm to re-plan the trajectory given a second car is on the track 
+                                                that you must pass. 
+                                            </p>
+                                        </li>
+                                        <li>
+                                            <p class="text-muted">
+                                                Predict the global position and heading from observable states using an extended Kalman filter (EKF) 
+                                                given some localization information is missing.
+                                            </p>
+                                        </li>
+                                    </ul>
+
+                                    <p class="text-muted">
+                                        The car drives around a track with the same geometry as the CMU buggy course. Buggy is 
                                         a time-honored CMU tradition where students race human-powered, small, aerodynamic vehicles around Schenley 
                                         Park's Flagstaff Hill. More information on it can be found <a href="https://www.cmu.edu/buggy/">here</a>. Like 
                                         buggy, the goal of the controller is to complete the 0.84 mile course minimizing both time and deviation from 
@@ -704,10 +808,50 @@
                                         search.
                                     </p>
                                     
-                                    <!-- <p class="text-muted">Finally, in the previous implementations, we are given the global coordinates of the 
-                                        course trajectory. If these are not given, I use an extended Kalman filter (EKF) for simultanious localization 
-                                        and mapping (SLAM) by predicting the distances to map coordinates whose global coordinates are provided.</p> -->
+                                    <h6>Extended Kalman Filter Simultaneous Localization and Mapping (EKF SLAM)</h6>
+                                    <p class="text-muted">Finally, in the previous implementations, we are given the global coordinates of the 
+                                        course trajectory, but these are not always available in real-world scenarios. Localization information from GPS 
+                                        could be missing or inaccurate in tunnels or in close proximity to tall infrastructure. In this case, we do not 
+                                        have direct access to the global position, <code>X</code> and <code>Y</code>, and heading, <code>psi</code>, and 
+                                        must estimates them from observable states in the vehicle
+                                        frame and range and bearing measurements of map features. I used an extended Kalman filter (EKF) for predicting the 
+                                        distances to map coordinates whose global coordinates are provided.
+                                    </p>
 
+                                    <p class="text-muted">Let the state vector be:</p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/state_vector.png" alt="..." />
+                                    <p class="text-muted">where there are <code>n</code> map features at global position <code>m</code>.</p>
+
+                                    <p class="text-muted">
+                                        The ground truth of these map feature positions are static but unknown, meaning they will not move but 
+                                        we do not know where they are exactly. However, the vehicle has both range and bearing measurements 
+                                        relative to these features:
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/measurement_system.png" alt="..." />
+
+                                    <p class="text-muted">
+                                        We can assume a closed-form expression for the predicted state as a function of the previous state, and 
+                                        the measurement can be a function of the state and the measurement noise:
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/x_y.png" alt="..." />
+
+                                    <p class="text-muted">
+                                        Then, I computed <code>F</code>, the Jacobian of the predicted state with respect to the previous state, 
+                                        and <code>H</code>, the Jacobian of the measurement with respect to the state. I computed these matrices 
+                                        by hand.
+                                    </p>
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/F_H.png" alt="..." />
+
+                                    <p class="text-muted">
+                                        With <code>n = 8</code> map features, <code>F</code> is a <code>(3 + 2n, 3 + 2n) = (19, 19)</code> size 
+                                        array, and <code>H</code> is a <code>(2n, 3 + 2n) = (16, 19)</code> size array. 
+                                    </p>
+
+                                    <p class="text-muted">
+                                        I then iteratively "predicted and corrected", predicting the state and error covariance, then updating both 
+                                        estimates after computing the Kalman gain.  
+                                    </p>
+                                    
                                     <h5>Evaluation:</h5>
                                     <h6>Discrete-Time Linear Quadratic Regulator (LQR):</h6>
                                     <p class="text-muted">The tuned LQR controller completed the track in approximately 120 seconds with a 
@@ -718,7 +862,7 @@
                                     <p class="item-intro text-muted">Fig. 2: Performance of linear quadratic regulator</p>
 
                                     <h6>A* Path Planning for Obstacle Avoidance:</h6>
-                                    <p class="text-muted">I checked the performance of my A* implementation with a few arbitrary costmaps as shown 
+                                    <p class="text-muted">I evaluated the performance of my A* implementation with a few arbitrary costmaps as shown 
                                         in Fig. 3, to ensure it was behaving the way I intended. These maps do not relate to the track but provide 
                                         a more general evalutaion of the function.
                                     </p>
@@ -737,6 +881,24 @@
                                     <p class="item-intro text-muted">Fig. 4: Performance of A* path planning algorithm on a section of the track (top) and 
                                         a GIF of the resulting simulation showing the overtaking of the second vehicle (bottom)
                                     </p>
+
+                                    <h6>Extended Kalman Filter Simultaneous Localization and Mapping (EKF SLAM)</h6>
+                                    <p class="text-muted">
+                                        I tested the performance of my EKF implementation on an arbitrary trajectory as shown in Fig. 5, before 
+                                        integrating it into my Webots simulation. 
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/ekf_performance.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 5: Performance of EKF implementation on arbitrary trajectory</p>
+                                    
+                                    <p class="text-muted">The tuned LQR controller with EKF SLAM completed the track in approximately 121 seconds. 
+                                        The maximum deviation increased slightly from 4.69 meters when global position was known to 5.10 meters using 
+                                        global position predictions and the average deviation from 0.41 meters to 0.84 meters as shown in Fig. 6.
+                                    </p>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/lqr_ekf_performance.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 6: Performance of EKF implementation using previously described LQR 
+                                        controller on Buggy course in Webots</p>
                                     
                                     <h5>Conclusion:</h5>
                                     <p class="text-muted">In conclusion, studying controllers and path planning for autonomous vehicles is essential 

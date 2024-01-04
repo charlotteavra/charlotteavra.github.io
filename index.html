@@ -216,7 +216,7 @@
                 </div>
                 
                 <div class="text-center">
-                    <a href="resume/cavra_1210_resume.pdf">
+                    <a href="resume/cavra_0103_resume.pdf">
                         <button class="btn btn-primary btn-xl text-uppercase" type="button">
                         View as PDF
                         </button>
@@ -813,7 +813,7 @@
                                         course trajectory, but these are not always available in real-world scenarios. Localization information from GPS 
                                         could be missing or inaccurate in tunnels or in close proximity to tall infrastructure. In this case, we do not 
                                         have direct access to the global position, <code>X</code> and <code>Y</code>, and heading, <code>psi</code>, and 
-                                        must estimates them from observable states in the vehicle
+                                        must estimate them from observable states in the vehicle
                                         frame and range and bearing measurements of map features. I used an extended Kalman filter (EKF) for predicting the 
                                         distances to map coordinates whose global coordinates are provided.
                                     </p>
@@ -831,7 +831,8 @@
 
                                     <p class="text-muted">
                                         We can assume a closed-form expression for the predicted state as a function of the previous state, and 
-                                        the measurement can be a function of the state and the measurement noise:
+                                        the measurement can be a function of the state and the measurement noise (more info 
+                                        <a href="https://www.mathworks.com/help/driving/ug/extended-kalman-filters.html">here</a>):
                                     </p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/x_y.png" alt="..." />
 

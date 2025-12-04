@@ -145,6 +145,23 @@ h6, .h6, h5, .h5, h4, .h4 {
     line-height: 1.2;
 }
 
+h7, .h7 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-style: italic;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+h8, .h8 {
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 p, .p {
     margin-top: 0.25;
     margin-bottom: 0.25rem;
@@ -191,6 +208,14 @@ h5, .h5 {
 }
 
 h6, .h6 {
+  font-size: 1rem;
+}
+
+h7, .h7 {
+  font-size: 1.5rem;
+}
+
+h8, .h8 {
   font-size: 1rem;
 }
 
@@ -709,7 +734,7 @@ progress {
 }
 .row {
   --bs-gutter-x: 1.5rem;
-  --bs-gutter-y: 0;
+  --bs-gutter-y: 1rem;
   display: flex;
   flex-wrap: wrap;
   margin-top: calc(-1 * var(--bs-gutter-y));

@@ -48,15 +48,32 @@
 
 
         <!-- Project Grid-->
-        <section class="page-section bg-light" id="portfolio">
+        <section class="page-section" id="portfolio">
             <div class="container">
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <h2 class="section-heading text-uppercase">Projects</h2>
-                </div>
+                </div> -->
+                <br>
 
                 <div class="row">
                     
                     <!-- Project 1-->
+                    <div class="col-lg-4 col-sm-6 mb-4">
+                        <div class="portfolio-item">
+                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
+                                <div class="portfolio-hover">
+                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
+                                </div>
+                                <img class="img-fluid" src="assets/img/portfolio/sculptbot/1.jpg" alt="..." />
+                            </a>
+                            <div class="portfolio-caption">
+                                <div class="portfolio-caption-heading">Robotic Clay Sculpting</div>
+                                <div class="portfolio-caption-subheading text-muted">Pre-trained models for deformable object manipulation</div>
+                            </div>
+                        </div>
+                    </div>
+                        
+                    <!-- Project 2-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal8">
@@ -67,12 +84,12 @@
                             </a>
                             <div class="portfolio-caption">
                                 <div class="portfolio-caption-heading">Robot Librarian</div>
-                                <div class="portfolio-caption-subheading text-muted">Nonprehensile manipulation for shelf organization</div>
+                                <div class="portfolio-caption-subheading text-muted">Nonprehensile manipulation for a shelf organization task</div>
                             </div>
                         </div>
                     </div>
                     
-                    <!-- Project 2-->
+                    <!-- Project 3-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal9">
@@ -89,7 +106,7 @@
                         </div>
                     </div>
 
-                    <!-- Project 3-->
+                    <!-- Project 4-->
                     <div class="col-lg-4 col-sm-6 mb-4">
                         <div class="portfolio-item">
                             <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal7">
@@ -102,22 +119,6 @@
                                 <div class="portfolio-caption-heading">Robot Mouth Audio Classification</div>
                                 <div class="portfolio-caption-subheading text-muted">Learning human-like tonal inflections 
                                     for studying lip synchronization on a humanoid robot mouth</div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Project 4-->
-                    <div class="col-lg-4 col-sm-6 mb-4">
-                        <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#portfolioModal4">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="assets/img/portfolio/sculptbot/1.jpg" alt="..." />
-                            </a>
-                            <div class="portfolio-caption">
-                                <div class="portfolio-caption-heading">Robotic Clay Sculpting</div>
-                                <div class="portfolio-caption-subheading text-muted">Pre-trained models for deformable object manipulation</div>
                             </div>
                         </div>
                     </div>
@@ -206,34 +207,42 @@
             </div>
         </section>
         
-
-
+        
         <!-- Resume Timeline -->
-        <section class="page-section" id="resume">
+        <section class="page-section bg-light" id="resume">
             <div class="container">
-                <div class="text-center">
+                <!-- <div class="text-center">
                     <h2 class="section-heading text-uppercase">Resume</h2>
-                </div>
-                
-                <div class="text-center">
-                    <a href="resume/avra_charlotte_resume_1203.pdf">
-                        <button class="btn btn-primary btn-xl text-uppercase" type="button">
-                        View as PDF
-                        </button>
-                    </a>
-                </div>  
+                </div> -->  
                 
                 <div class="text-center">
                     <h1>Experience</h1>
                 </div>
 
                 <ul class="timeline">
+                    <li class="timeline-inverted">
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/medra_logo.jfif" alt="..." /></div>
+                        <div class="timeline-panel">
+                            <div class="timeline-heading">
+                                <h5>Robotics Engineer</h5>
+                                <h6 class="subheading">Medra | June 2024 - Dec. 2025</h6>
+                            </div>
+                            <div class="timeline-body">
+                                <p class="text-muted">As a robotics deployment engineer at Medra I owned end-to-end delivery of customer projects, 
+                                    from concept and prototyping to development and field deployment. I programmed and tested robotic behaviors to automate
+                                    lab workflows, including task optimization, error handling, and motion planning for careful handling. I traveled to customer 
+                                    sites and collaborated closely with partner scientists to translate scientific goals into reliable robotic behaviors and 
+                                    validate them in their lab environments. 
+                                </p> 
+                            </div>
+                        </div>
+                    </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cmu_logo.png" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/cmu_logo.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Graduate Researcher</h5>
-                                <h6 class="subheading">Mechanical and AI Lab | Aug. 2022 - present</h6>
+                                <h6 class="subheading">Mechanical and AI Lab | Aug. 2022 - May 2024</h6>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">Studying learning for 3-dimensional deformable object manipulation (specifically clay and 
@@ -249,7 +258,7 @@
                         <div class="timeline-panel">    
                             <div class="timeline-heading">
                                     <h5>Teaching Assistant</h5>
-                                    <h6 class="subheading">Engineering Computation | Aug. 2023 - present</h6>
+                                    <h6 class="subheading">Engineering Computation | Aug. 2023 - Dec. 2023</h6>
                             </div>
                             <div class="timeline-body">
                                 <p class="text-muted">
@@ -262,7 +271,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/medra_logo.jfif" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/medra_logo.jfif" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Robotics Engineer, Intern</h5>
@@ -279,7 +288,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/nlk_logo.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/nlk_logo.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Mechanical Design Engineer, Intern</h5>
@@ -296,7 +305,7 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/rpi_logo_2.png" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/rpi_logo_2.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Undergraduate Researcher</h5>
@@ -311,7 +320,7 @@
                         </div>
                     </li>
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/nlk_logo.jpg" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/nlk_logo.jpg" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Mechanical Design Engineer, Intern</h5>
@@ -337,7 +346,7 @@
                     </li>
                     <!--
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/crate_barrel_logo.png" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/crate_barrel_logo.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Stock Associate</h5>
@@ -358,7 +367,7 @@
 
                 <ul class="timeline">
                     <li>
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/cmu_logo.png" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/cmu_logo.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Master of Science, Mechanical Engineering</h5>
@@ -366,7 +375,6 @@
                             </div>
                             <div class="timeline-body">  
                                 <p class="text-muted">Emphasis: Robotics and Controls</p>
-                                <p class="text-muted">Cumulative GPA: 3.99/4.00</p>
                                 <p class="text-muted">Achievements: BRIDGE Fellowship (2022 - 2024)</p>
                                 <p class="text-muted">Relevant Coursework: Learning for Manipulation, Machine Learning, Deep Learning, C++, Data Structures, 
                                     Modern Control Theory, Computer Vision
@@ -375,14 +383,13 @@
                         </div>
                     </li>
                     <li class="timeline-inverted">
-                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/about/rpi_logo_2.png" alt="..." /></div>
+                        <div class="timeline-image"><img class="rounded-circle img-fluid" src="assets/img/logos/rpi_logo_2.png" alt="..." /></div>
                         <div class="timeline-panel">
                             <div class="timeline-heading">
                                 <h5>Bachelor of Science, Mechanical Engineering</h5>
                                 <h6 class="subheading">Rensselaer Polytechnic Institute | 2018-2021</h6>
                             </div>
                             <div class="timeline-body">
-                                <p class="text-muted">Cumulative GPA: 3.55/4.00</p>
                                 <p class="text-muted">Achievements: Inventors’ Studio Innovator Award (2021)</p>
                                 <p class="text-muted">Relevant Coursework: Elements of Mechanical Design, Modeling and Control
                                     of Dynamic Systems, Electronic Instrumentation, Finite Element Analysis, Fluid Dynamics  
@@ -391,6 +398,14 @@
                         </div>
                     </li>
                 </ul>
+
+                <div class="text-center">
+                    <a href="resume/avra_charlotte_resume_1204.pdf">
+                        <button class="btn btn-primary btn-xl text-uppercase" type="button">
+                        View as PDF
+                        </button>
+                    </a>
+                </div>
                 
                 <!-- Resume Skills -->
                     <div class="text-center">
@@ -399,40 +414,33 @@
                    
                     <div class="row text-left">
                         <div class="col-md-4">
-                            <h5 class="my-3">Programming:</h5>
-                            <p class="text-muted">Python (incl. OpenCV, SciPy, control), C/C++ (incl. OpenGL), MATLAB & Simulink, 
-                                Git, CMake, VSCode</p>
-                        </div>
-
-                        <div class="col-md-4">
-                            <h5 class="my-3">Robotics & Control Systems:</h5>
-                            <p class="text-muted">Design of state feedforward/feedback, optimal, and stochastic controllers and observers 
-                                (PID, pole placement, LQR, Kalman filter, MRAC approaches), A* path planning, Hardware (incl. Motors, Actuators, Sensors)</p>
-                        </div>
-
-                        <div class="col-md-4">
                             <h5 class="my-3">Design:</h5>
-                            <p class="text-muted">Solidworks, Siemens NX, GD&T, Tolerance Stack-up, Material Selection, Design for Machining, 
-                                    Design for Plastic Injection Molding</p>
+                            <p class="text-muted">Solidworks, NX, GD&T, tolerance stack-up, material selection, DFM/DFA,
+                                PDM systems
+                            </p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="my-3">Robotics:</h5>
+                            <p class="text-muted">Python, C++, OpenCV, Git, CMake, depth cameras, optical sensors, motion planning 
+
+                            </p>
+                        </div>
+
+                        <div class="col-md-4">
+                            <h5 class="my-3">Prototyping and Fabrication:</h5>
+                            <p class="text-muted">3D printing, laser cutting, fixture building, motors, actuators, manual machining,
+                                injection molding, vacuum forming
+                            </p>
                         </div>
 
                     </div>
 
                     <div class="row text-left">
                         <div class="col-md-4">
-                            <h5 class="my-3">Machine Learning and Data Analysis:</h5>
-                            <p class="text-muted">PyTorch, scikit learn, Tensorflow, keras, MediaPipe, librosa (audio analysis), 
-                                    Pandas, Matplotlib</p>
-                        </div>
-
-                        <div class="col-md-4">
-                            <h5 class="my-3">Prototyping Processes:</h5>
-                            <p class="text-muted">SLA and FDM 3D Printing, Laser Cutting, Vacuum Forming, Woodworking</p>
-                        </div>
-                            
-                        <div class="col-md-4">
-                            <h5 class="my-3">Manufacturing Processes:</h5>
-                            <p class="text-muted">Manual Machining, CNC machining, Injection Molding</p>
+                            <h5 class="my-3">Machine Learning:</h5>
+                            <p class="text-muted">PyTorch, Pandas, classification, model training, feature extraction, 
+                                    data augmentation, fine-tuning</p>
                         </div>
                     </div>
             </div>
@@ -440,7 +448,7 @@
         
 
         <!-- About-->
-        <section class="page-section bg-light" id="about">
+        <section class="page-section" id="about">
             <div class="container">
                 <div class="text-center">
                     <h2 class="section-heading text-uppercase">About</h2>
@@ -448,7 +456,7 @@
                 <div class="row">
                     <div class="col-lg-4">
                         <div class="team-member">
-                            <img class="mx-auto rounded-circle" src="assets/img/profile.jpg" alt="..." />
+                            <img class="mx-auto rounded-circle" src="assets/img/about/profile.jpg" alt="..." />
                             <p></p>
                             <a class="btn btn-dark btn-social mx-2" href="https://www.linkedin.com/in/charlotteavra/" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
                             <a class="btn btn-dark btn-social mx-2" href="https://github.com/charlotteavra" aria-label="GitHub"><i class="fab fa-github"></i></a>
@@ -505,7 +513,10 @@
                                     <!-- Project details-->
                                     <div class="text-center">
                                         <h3>Robot Librarian</h3>
-                                        <p class="item-intro text-muted">Nonprehensile manipulation for shelf organization</p>
+                                        <p class="item-intro text-muted">Nonprehensile manipulation for a shelf organization task</p>
+                                        <p class="item-intro text-muted">
+                                            <a href="https://github.com/charlotteavra/robot_librarian">[CODE]</a>
+                                        </p>
                                     </div>
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/5.png" alt="..." />
@@ -934,7 +945,7 @@
                                     <!-- Project details-->
                                     <div class="text-center">
                                         <h3>Robotic Clay Sculpting</h3>
-                                        <p class="item-intro text-muted">Pre-trained models for deformable object manipulation</p>
+                                        <p class="item-intro text-muted">Behavioral Cloning and Dynamics Prediction for Robotic Clay Manipulation</p>
                                         <p class="item-intro text-muted">
                                             <a href="https://arxiv.org/abs/2309.08728">[PAPER]</a> | 
                                             <a href="https://sites.google.com/andrew.cmu.edu/sculptbot/home">[WEBSITE]</a>
@@ -944,96 +955,88 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/1.jpg" alt="..." />
 
                                     
-                                    <h5>Background:</h5>
-                                    <p class="text-muted">Deformable objects are prevalent in tasks related to cooking, manufacturing, medical procedures, 
-                                        and more. It is therefore necessary to develop robotic systems that can effectively handle and manipulate 
-                                        deformable objects before being deployed in these environments. However, due to their plastic behavior, 
-                                        deformable objects have complex dynamics. State estimation for deformable objects is also more difficult 
-                                        than for rigid objects that retain a constant shape. Therefore, we present a system that leverages pre-trained point cloud 
-                                        reconstruction models to learn a latent dynamics model for 3D deformable object manipulation.</p>
+                                    <h5>Abstract:</h5>
+                                    <p class="text-muted">
+                                        Deformable object manipulation presents a unique set of challenges in robotic manipulation including high degrees of freedom, complex dynamics, and severe 
+                                        self-occlusion. We investigate these challenges through two approaches: learning a latent dynamics model with point clouds as the state representation for 
+                                        predicting material deformations given a grasp action and training a transformer-based behavioral cloning (BC) framework for predicting action sequences. 
+                                        Both approaches are focused on the task of robotic clay sculpting with a parallel gripper and all data collection and experiments are conducted on a physical 
+                                        robot. Our results demonstrate the effectiveness of the latent dynamics model to capture the dynamics of the clay and, when combined with model predictive 
+                                        control (MPC) and our action sampler, generate a range of simple shapes. However, we find the transformer-based BC framework struggles to learn a comprehensive 
+                                        manipulation policy due to challenges with the highly multimodal nature of the sculpting task. Through these methods and corresponding experiments, we demonstrate 
+                                        the generalization capability of the latent dynamics model and the value of leveraging 3D state representations. The limitations of our transformer-based BC 
+                                        approach reveal the necessity for further research into imitation learning methods for deformable object manipulation that better handle multimodal action 
+                                        distributions in the demonstration trajectories.</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/2.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 1: Deformable objects prevalent in cloth manipulation, cooking,
-                                        computer manufacturing, and medical procedures
-                                    </p>
+                                    <p class="item-intro text-muted">Fig. 1: Robotic manipulation of deformable objects has applications in the automotive industry with the complex assembly of wire 
+                                        harnesses, surgical robotics, cooking and service robotics, and the agriculture industry where robots may be handling soft fruits and vegetables.
+                                    </p> 
                                     
-                                    <h5>Objectives:</h5>
-                                    <p class="text-muted">We chose the task of robotic sculpting of modeling clay to develop a system that can learn
-                                        a latent representation of the object and plan trajectories for sculpting a certain goal shape. The goal shape 
-                                        would be provided to the system as point cloud data.</p>
-                                    
-                                    <h5>Method:</h5>
-                                    <p class="text-muted">
-                                        Our method for sculpting the modeling clay primarily consists of 3 modules:</p>
+                                    <h5>Methods:</h5>
+                                    <p class="text-muted">We investigate these challenges using the task of robotic clay sculpting and approaching the task with two methods: predicting clay dynamics and 
+                                        predicting actions.</p>
+
+                                    <h6>Vision System:</h6>
+                                        <p class="text-muted">
+                                        Both processes share the same visual data processing pipeline:</p>
                                         <ul>
                                             <li>
-                                                <p class="text-muted">Perception: We represent the environment as point cloud data and isolate the 
-                                            modeling clay using position and color-based cropping.</p>
+                                                <p class="text-muted">RGBD data from workspace cameras are registered for a full point cloud representation of the clay. We calibrate four 
+                                                    workspace cameras and use the RANSAC global registration algorithm to roughly align the point clouds. We then use the iterative closest point (ICP) 
+                                                    algorithm for refinement.</p>
                                             </li>
                                             <li>
-                                                <p class="text-muted">Tokenizer: We leverage the tokenizer from <a href="https://arxiv.org/abs/2111.14819">Point-BERT</a>, a pre-trained model 
-                                                    that generalizes the concept of BERT (a family of large language models) to 3D point clouds.</p>       
+                                                <p class="text-muted">Position and color-based cropping are used to isolate the clay. Due to the top-down images 
+                                                    captured from the RGBD cameras, the base of the object is occluded. To form a fully enclosed point cloud shell, 
+                                                    we combine the point cloud with a base plane of generated points.</p>       
                                             </li>
                                             <li>
-                                                <p class="text-muted">Dynamics Model: We train both a simple physics approximator and a DGCNN token predictor model. The predicted 
-                                                    tokens from the DGCNN along with the predicted centroid point cloud from the physics approximator are then passed through the 
-                                                    Point-BERT dVAE decoder to reconstruct the full dense predicted next state point cloud. 
-                                                </p>
+                                                <p class="text-muted"> 
+                                                    Point clouds are downsampled to 2048 points using uniform random sampling for faster training.</p>
                                             </li>
                                         </ul>
                                     </p>
+                                    
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/3.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 2: A visualization of our method for scultping modeling clay that primarily consists of 3 modules</p>
-                                    
-                                    <h6>Perception:</h6>
-                                    <p class="text-muted">We calibrated four workspace cameras and used a global registration algorithm (RANSAC) to first roughly align the point clouds 
-                                        taken by the cameras. We then used iterative closest point (ICP) algorithm for refinement.</p>
+                                    <p class="item-intro text-muted">Fig. 2: Data processing pipeline for point clouds 
+                                    </p>
 
+                                    <h6>Latent Dynamics Model:</h6>
+                                    <p class="text-muted">We leverage the tokenizer from <a href="https://arxiv.org/abs/2111.14819">Point-BERT</a>, a pre-trained model trained on the ShapeNet dataset, to learn 
+                                        a latent representation of the input point cloud data.</p>
+                                    
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/4.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 3: A top-down view of workspace with four RGBD cameras (left) and a visualization of the global and local 
-                                        registration algorithms we used for point cloud alignment 
+                                    <p class="item-intro text-muted">Fig. 3: Point-BERT learns a quality reconstruction of the input point cloud data evaluated using Chamfer Distance (CD) 
                                     </p>
 
-                                    <p class="text-muted">The aligned point clouds were then pre-processed to produce a more quality representation. Due to the top-down images we 
-                                        captured from the RGBD cameras, the base of the clay was occluded. We first perform a simple position-based crop to isolate the elevated stage, 
-                                        and use color-based cropping in the LAB colorspace to isolate the clay from the table. We then extract the points closest to the base of the
-                                        clay (by indexing points below a z threshold). We use this shape outline to crop a plane of points to form the bottom of the clay. We combine this 
-                                        base plane with the original cloud to form a fully enclosed point cloud shell. This processing is based on the assumption that the clay
-                                        is always resting on the elevated stage, thus the base of the clay will be at that z-position. Once we have the clay shell, we downsample the 
-                                        point cloud to 2048 points.
-                                    </p>
-
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/5.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 4: Preprocessing pipeline for point clouds (from left to right) original point cloud, position-based cropping,
-                                        color-based cropping, add base plane, downsample 
-                                    </p>
-
-                                    <h6>Point-BERT Tokenizer:</h6>
-                                    <p class="text-muted">We leverage the tokenizer from Point-BERT, a pre-trained model that generalizes the 
-                                        concept of BERT (a family of large language models) to 3D point clouds, to learn a latent representation of the input point cloud data. Point-BERT is 
-                                        pre-trained on the ShapeNet dataset, a collection of 3D point clouds of 3,135 common categories.  
-                                    </p>
-
-                                    <h6>Dynamics Models:</h6>
-                                    <p class="text-muted">Within this latent space, our simple physics approximator learns to propagate the point cloud based on a grasp action and output 
-                                        a next-state centroid. This dynamics approximator is very light weight, moving the points that are inliers in the approximated gripper trajectory 
-                                        mesh based on the grasp pose.</p>
-
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/6.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 5: Light-weight physics-based approximator learns next-state centroid given an initial state and a grasp action 
-                                    </p>
-
-                                    <p class="text-muted">Based on centroid movement, we then predict how features of each point cloud cluster change and deform and output next-state 
-                                        discrete tokens. To do this we train a <a href="https://www.sciencedirect.com/science/article/pii/S0893608018302636">DGCNN</a> token predictor 
-                                        model to predict how each cluster’s point token changes given the grasp action. These next-state discrete tokens are then decoded by the Point-BERT 
-                                        decoder to output a next-state point cloud in real space.</p>
+                                    <p class="text-muted">Within this latent space, we predict how features of each point cloud cluster change and deform and output next-state 
+                                        discrete tokens using a <a href="https://www.sciencedirect.com/science/article/pii/S0893608018302636">DGCNN</a> token predictor 
+                                        model. The DGCNN predicts how each cluster’s point token changes given a grasp action. The output next-state discrete tokens are then decoded by the Point-BERT 
+                                        dVAE decoder to output a predicted, next-state, fully dense point cloud in real space.</p>
                                     
-                                    <h6>Data Collection:</h6>
-                                    <p class="text-muted">To train alternate versions of the dynamics models, we collect two separate datasets on a Franka Emika Panda manipulator: a random
-                                        action dataset and human demonstratino dataset. The random action dataset was collected by randomly sampling action parameters and executing the 
-                                        generated grasps. A point cloud of the clay was collected before and after each grasp. The human demonstration dataset collected using kinesthetic 
-                                        teaching where the human controlled the end-effector position, rotation and the distance between the fingertips. A point cloud of the clay was again 
-                                        collected before and after each grasp.
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/5.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 4: Latent dynamics model prediction pipeline 
+                                    </p>
+
+                                    <h6>Imitation Learning:</h6>
+                                    <p class="text-muted">The transformer-based behavioral cloning (BC) framework predicts a sequence of actions to achieve a goal state. We train two 
+                                        <a href="https://tonyzhaozh.github.io/aloha/">action-chunking transformer (ACT)</a> policies: (1) with input point cloud observations embedded using Point-BERT, 
+                                        and (2) with top-down image observations embedded using the default ResNet encoders. We apply rotation augmentations to the point clouds increase the number of 
+                                        trajectories used to train. Rotation augmentations consist of centering the point clouds on the z-axis and applying a z-rotation with a corresponding z-rotation 
+                                        of the robot end-effector. 
+                                    </p>
+                                    
+                                    <h5>Experiments:</h5>
+                                    <p class="text-muted">We collect two separate datasets on a physical Franka Emika Panda manipulator: a random
+                                        action dataset and human demonstration dataset. The random action dataset is collected by randomly sampling action parameters and executing the 
+                                        generated grasps. A point cloud of the clay is recorded before and after each grasp. The human demonstration dataset is collected using kinesthetic 
+                                        teaching where the human demonstrator controls the end-effector position, rotation, and the distance between the fingertips. A point cloud of the clay is again 
+                                        recorded before and after each grasp. 
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/7.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 5: Data collection hardware setup
                                     </p>
 
                                     <p class="text-muted">During initial data collection, we were noticing the robot grippers would unintentionally pick up the clay rendering it difficult 
@@ -1042,27 +1045,36 @@
                                     </p>
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/8.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 7: CAD model of the data collection setup with the Franka manipulator, elevated stage for the clay (initialized to
+                                    <p class="item-intro text-muted">Fig. 6: CAD model of the data collection setup with the Franka manipulator, elevated stage for the clay (initialized to
                                         a cylinder), and a small 3D printed screw that acted as an anchor to keep the center relatively restrained to the stage
                                     </p>
 
-                                    <p class="text-muted">We found that although this slighlty restricted motion of the grippers, it aided greatly in both the random action and human 
-                                        demonstration data collection processes.
+                                    <h6>Latent Dynamics Model:</h6>
+                                    <p class="text-muted">We find that the dynamics model effectively captures the dynamics of the clay and predicts next-state. 
+                                    </p>
+                                    
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/10.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 7: Next-state dynamics predictions of the clay evaluated using Chamfer Distance (CD)
                                     </p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/9.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 8: Robot grippers picking up the clay in some orientations when collecting data for the random action dataset (left)
-                                        and the clay being held down by a center anchor (right)
-                                    </p>
-
-                                    <h5>Evaluation:</h5>
                                     <p class="text-muted">We plan action trajectories using model predictive control (MPC) and evaluate the results of different sculpting tasks. The dynamics 
                                         model trained on the human demonstration dataset had a 16.1% lower mean chamfer distance than the dynamics model trained on  the random action dataset.
                                     </p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/10.png" alt="..." />
-                                    <p class="item-intro text-muted">Fig. 9: Shapes our human demonstrator was able to achieve with the robot in guiding mode (left) and the shapes output by the 
-                                        human demonstration trained dynamics model combined with MPC and geometric sampling (right)
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/11.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 8: Real-world shapes created by human (left) and human demonstration trained dynamics model combined with MPC and 
+                                        geometric sampling (right)
+                                    </p>
+
+                                    <h6>Imitation Learning:</h6>
+                                    <p class="text-muted">The transformer-based BC approach struggles with multimodality in the demonstration trajectories. Both of the trained ACT policies converge 
+                                        to repeating the most common action from the demonstrations regardless of state observation. 
+                                    </p>
+
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/12.png" alt="..." />
+                                    <p class="item-intro text-muted">Fig. 8: Target shape (left) and poor results from ACT policies trained on images and point clouds, as compared with a human 
+                                        demonstrator (right)
+
                                     </p>
                                     
                                     <div class="text-center">

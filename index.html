@@ -562,7 +562,7 @@
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/5.png" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">
                                         Nonprehensile manipulation refers to manipulation not adapted for or not involving antipodal grasping. 
                                         It therefore leverages a wider variety of primitives, such as pushing, sliding, rolling, and tipping 
@@ -576,7 +576,7 @@
                                         dynamic environments like kitchens, warehouses, and retail spaces, that demand versatile interactions.
                                     </p>
 
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">
                                         In this project, my team and I investigated a shelf organization task and planned efficient robot-pushing 
                                         motions, enabling the reorganization of boxes leaning on a shelf to create space for an additional box. 
@@ -585,7 +585,7 @@
                                         be placed. 
                                     </p>
 
-                                    <h5>Method:</h5>
+                                    <h5>Method</h5>
                                     <p class="text-muted">
                                         We first categorized the possible box configurations within the project scope into 4 cases:
                                     </p>
@@ -634,7 +634,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/flowchart.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 2: General framework of our approach 
                                     
-                                    <h6>Sampling-based Approach:</h6>
+                                    <h6>Sampling-based Approach</h6>
                                     <p class="text-muted">
                                         I explored our first approach for planning an efficient robot-pushing motion which involved uniform random 
                                         sampling of contact points on the surface of the box, simulating a push from that location, and evaluating 
@@ -667,7 +667,7 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/score.png" alt="..." />
 
-                                    <h6>Search-based Approach:</h6>
+                                    <h6>Search-based Approach</h6>
                                     <p class="text-muted">
                                         Unfortunately, the previous approach does not exploit any specific knowledge of the goal to make decisions. 
                                         To take a more informed approach, I also attempted a search-based method. Similar to the previous appraoch, 
@@ -695,7 +695,7 @@
                                         In the planning loop, the successors of each node are simply the eight neighbors of the current node.  
                                     </p>
 
-                                    <h5>Evaluation:</h5>
+                                    <h5>Evaluation</h5>
                                     <p class="text-muted">
                                         We ran 50 randomly generated trials and recorded the average plannning time and success rate. In each 
                                         trial, the first box is placed vertically, and the second box is placed at a random angle between 
@@ -703,7 +703,7 @@
                                         the boxes to settle. 
                                     </p>
 
-                                    <h6>Sampling-based Approach:</h6>
+                                    <h6>Sampling-based Approach</h6>
                                     <p class="text-muted">
                                         The uninformed sampling approach achieved a 20% success rate across all 50 trials, and an average planning 
                                         time of 25.1 seconds.
@@ -715,7 +715,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/sample_gif_fail.gif" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6: Example of a failed push action (score = 0.794)</p>
                                     
-                                    <h6>Search-based Approach:</h6>
+                                    <h6>Search-based Approach</h6>
                                     <p class="text-muted">
                                         The success rate increased to 78% for the search-based approach and the planning time reduced by approximately 
                                         20 seconds, with an average planning time of 5.08 seconds per trial, compared to the sampling-based approach.
@@ -724,7 +724,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/bookshelf/search_gif_2.gif" alt="..." />
                                     <p class="item-intro text-muted">Fig. 7: Example of a successful push action (h(s) = 0.0042)</p>
                                     
-                                    <h5>Conclusion:</h5>
+                                    <h5>Conclusion</h5>
                                     <p class="text-muted">
                                         Prehensile manipulation can set artificial limits on the range of tasks a robot can perform. Dynamic nonprehensile 
                                         manipulation, which leverages a wider variety of primitives such as pushing, sliding, rolling, and tipping, exploits 
@@ -771,13 +771,13 @@
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/1.png" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">There have been significant advancements in autonomous vehicle technology in 
                                         recent years. As more self-driving vehicles are being developed and tested, there is an increasing 
                                         need for robust controllers and efficient path planning algorithms to ensure safe and reliable 
                                         autonomous operation.</p>
 
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">The goal of this project was to:</p>
                                     <ul>
                                         <li>
@@ -811,8 +811,8 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/3.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 1: Kinematic bicycle model</p>
 
-                                    <h5>Method:</h5>
-                                    <h6>Discrete-Time Linear Quadratic Regulator (LQR):</h6>
+                                    <h5>Metho:</h5>
+                                    <h6>Discrete-Time Linear Quadratic Regulator (LQR)</h6>
                                     <p class="text-muted">I first implemented an infinite horizon discrete-time Linear Quadratic Regulator (LQR) controller 
                                         for lateral control of the vehicle and a simple PID control for longitudinal control. The error-based linearized state 
                                         space model for the lateral dynamics is given by:  
@@ -836,7 +836,7 @@
                                     <p class="text-muted">and compute the control outputs using:</p>
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/input.png" alt="..." />
                                     
-                                    <h6>PID Controller for Longitudinal Control:</h6>
+                                    <h6>PID Controller for Longitudinal Control</h6>
                                     <p class="text-muted">For the PID controller, I define a minimum and maximum speed as <code>speed_min</code> and <code>speed_max</code>, 
                                         chosen emperically. I then compute the curvature of the track at the current location using the closest waypoint and a waypoint at a 
                                         certain look ahead distance (also defined emperically), and set the <code>ideal_speed</code> of the car to be 
@@ -846,7 +846,7 @@
                                         <code>F = (Kp*speed_error) + (Ki*total_speed_error) + (Kd * speed_error_rate)</code>.
                                     </p>
                                     
-                                    <h6>A* Path Planning for Obstacle Avoidance:</h6>
+                                    <h6>A* Path Planning for Obstacle Avoidance</h6>
                                     <p class="text-muted">Obstacle avoidance is crucial in autonomous vehicle control. In the previous example, there was only 
                                         one vehicle on the track, but if another is introduced, we must determine how to safely overtake it. For this, I take a 
                                         very simplified approach where I assume we will overtake the other vehicle in the straight-away so we can re-plan the 
@@ -905,8 +905,8 @@
                                         estimates after computing the Kalman gain.  
                                     </p>
                                     
-                                    <h5>Evaluation:</h5>
-                                    <h6>Discrete-Time Linear Quadratic Regulator (LQR):</h6>
+                                    <h5>Evaluation</h5>
+                                    <h6>Discrete-Time Linear Quadratic Regulator (LQR)</h6>
                                     <p class="text-muted">The tuned LQR controller completed the track in approximately 120 seconds with a 
                                         maximum deviation of 4.69 meters and an average deviation of 0.41 meters as shown in Fig. 2.
                                     </p>
@@ -914,7 +914,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/buggy/lqr_performance.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 2: Performance of linear quadratic regulator</p>
 
-                                    <h6>A* Path Planning for Obstacle Avoidance:</h6>
+                                    <h6>A* Path Planning for Obstacle Avoidance</h6>
                                     <p class="text-muted">I evaluated the performance of my A* implementation with a few arbitrary costmaps as shown 
                                         in Fig. 3, to ensure it was behaving the way I intended. These maps do not relate to the track but provide 
                                         a more general evalutaion of the function.
@@ -953,7 +953,7 @@
                                     <p class="item-intro text-muted">Fig. 6: Performance of EKF implementation using previously described LQR 
                                         controller on Buggy course in Webots</p>
                                     
-                                    <h5>Conclusion:</h5>
+                                    <h5>Conclusion</h5>
                                     <p class="text-muted">In conclusion, studying controllers and path planning for autonomous vehicles is essential 
                                         to address the evolving challenges and opportunities in the field and to pave the way for the safe and 
                                         widespread adoption of autonomous vehicle technology.</p>
@@ -996,7 +996,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/sculptbot/1.jpg" alt="..." />
 
                                     
-                                    <h5>Abstract:</h5>
+                                    <h5>Abstract</h5>
                                     <p class="text-muted">
                                         Deformable object manipulation presents a unique set of challenges in robotic manipulation including high degrees of freedom, complex dynamics, and severe 
                                         self-occlusion. We investigate these challenges through two approaches: learning a latent dynamics model with point clouds as the state representation for 
@@ -1014,11 +1014,11 @@
                                         harnesses, surgical robotics, cooking and service robotics, and the agriculture industry where robots may be handling soft fruits and vegetables.
                                     </p> 
                                     
-                                    <h5>Methods:</h5>
+                                    <h5>Methods</h5>
                                     <p class="text-muted">We investigate these challenges using the task of robotic clay sculpting and approaching the task with two methods: predicting clay dynamics and 
                                         predicting actions.</p>
 
-                                    <h6>Vision System:</h6>
+                                    <h6>Vision System</h6>
                                         <p class="text-muted">
                                         Both processes share the same visual data processing pipeline:</p>
                                         <ul>
@@ -1043,7 +1043,7 @@
                                     <p class="item-intro text-muted">Fig. 2: Data processing pipeline for point clouds 
                                     </p>
 
-                                    <h6>Latent Dynamics Model:</h6>
+                                    <h6>Latent Dynamics Model</h6>
                                     <p class="text-muted">We leverage the tokenizer from <a href="https://arxiv.org/abs/2111.14819">Point-BERT</a>, a pre-trained model trained on the ShapeNet dataset, to learn 
                                         a latent representation of the input point cloud data.</p>
                                     
@@ -1060,7 +1060,7 @@
                                     <p class="item-intro text-muted">Fig. 4: Latent dynamics model prediction pipeline 
                                     </p>
 
-                                    <h6>Imitation Learning:</h6>
+                                    <h6>Imitation Learning</h6>
                                     <p class="text-muted">The transformer-based behavioral cloning (BC) framework predicts a sequence of actions to achieve a goal state. We train two 
                                         <a href="https://tonyzhaozh.github.io/aloha/">action-chunking transformer (ACT)</a> policies: (1) with input point cloud observations embedded using Point-BERT, 
                                         and (2) with top-down image observations embedded using the default ResNet encoders. We apply rotation augmentations to the point clouds increase the number of 
@@ -1068,7 +1068,7 @@
                                         of the robot end-effector. 
                                     </p>
                                     
-                                    <h5>Experiments:</h5>
+                                    <h5>Experiments</h5>
                                     <p class="text-muted">We collect two separate datasets on a physical Franka Emika Panda manipulator: a random
                                         action dataset and human demonstration dataset. The random action dataset is collected by randomly sampling action parameters and executing the 
                                         generated grasps. A point cloud of the clay is recorded before and after each grasp. The human demonstration dataset is collected using kinesthetic 
@@ -1090,7 +1090,7 @@
                                         a cylinder), and a small 3D printed screw that acted as an anchor to keep the center relatively restrained to the stage
                                     </p>
 
-                                    <h6>Latent Dynamics Model:</h6>
+                                    <h6>Latent Dynamics Model</h6>
                                     <p class="text-muted">We find that the dynamics model effectively captures the dynamics of the clay and predicts next-state. 
                                     </p>
                                     
@@ -1107,7 +1107,7 @@
                                         geometric sampling (right)
                                     </p>
 
-                                    <h6>Imitation Learning:</h6>
+                                    <h6>Imitation Learning</h6>
                                     <p class="text-muted">The transformer-based BC approach struggles with multimodality in the demonstration trajectories. Both of the trained ACT policies converge 
                                         to repeating the most common action from the demonstrations regardless of state observation. 
                                     </p>
@@ -1155,7 +1155,7 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/1.png" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">This project attempts to quantify the human-likeness of sound produced by 
                                         a humanoid robot. Humanoid robots are often designed to interact with humans in various settings, 
                                         such as homes, workplaces, or public spaces. Therefore, human-like sound allows robots to communicate 
@@ -1165,7 +1165,7 @@
                                         Fig. 1.   
                                     </p>
 
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">Our goal was to quantify the human-likeness of audio produced by the robot such 
                                         that we can use this metric to rate each sound and iteratively update the robot's hardware to 
                                         produce a more human-like sound.
@@ -1174,13 +1174,13 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/mouthrobot/2.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 1: Humanoid robot mouth used for this project</p>
 
-                                    <h5>Audio Processing:</h5>
+                                    <h5>Audio Processing</h5>
                                     <p class="text-muted">The way in which data is processed before inputting it into any kind of 
                                         machine learning or deep learning model is fundamental. In the domain of audio, there are 
                                         several concepts that aid in data pre-processing.
                                     </p>
 
-                                    <h6>Mel Spectrograms:</h6>
+                                    <h6>Mel Spectrograms</h6>
                                     <p class="text-muted">Digital representations of audio signals most often begin as the relationship 
                                         of amplitude and time. However, to extract useful information from these signals, a Fourier 
                                         transform can be applied to decompose a signal into its individual frequencies and their 
@@ -1208,7 +1208,7 @@
                                     <p class="item-intro text-muted">Fig. 3: Example Mel Spectrograms of a human (left) and our mouth 
                                         robot producing a high-level tone</p>
 
-                                    <h6>Mel Frequency Cepstral Coefficients:</h6>
+                                    <h6>Mel Frequency Cepstral Coefficients</h6>
 
                                     <p class="text-muted">The Mel Frequency Cepstrum (MFC) is a discrete cosine transformation (DCT) 
                                         on the log of the magnitude of the Fourier spectrum which is obtained by applying a Fourier 
@@ -1221,8 +1221,8 @@
                                     <p class="item-intro text-muted">Fig. 4: Example Mel Frequency Cepstral Coefficients of a human  
                                         producing a dipping tone (left) and a falling tone (right)</p>
 
-                                    <h5>Method:</h5>
-                                    <h6>Data Collection:</h6>
+                                    <h5>Method</h5>
+                                    <h6>Data Collection</h6>
                                     <p class="text-muted">We first collected several thousand audio recordings from the robot. To construct the 
                                         dataset, we first structured each data point as a sequence of 3 varied pitches with a 
                                         repeating open and closed actuation of the mouth. We then populated each sequence with an 
@@ -1241,7 +1241,7 @@
                                         tone, dipping tone, and falling tone. We used 4,500 of these audio files. 
                                     </p>
 
-                                    <h6>Data Augmentation:</h6>
+                                    <h6>Data Augmentation</h6>
                                     <p class="text-muted">The iteration time for updating the robot hardware to test different 
                                         configurations in the hopes of obtaining a more human-like sound would be long. Therefore, 
                                         we chose to augment data from the robot in different ways to speed up iteration cycles.
@@ -1289,7 +1289,7 @@
                                         input into the model. 
                                     </p>
 
-                                    <h6>Model Architecture:</h6>
+                                    <h6>Model Architecture</h6>
                                     <p class="text-muted">The CNN architecture we used was adapted from 
                                         <a href="https://github.com/adhishthite/sound-mnist">sound-mnist</a> and has 3 
                                         convolution layers with relu activation and batch normalization after each layer. Then a 
@@ -1311,7 +1311,7 @@
                                         predictions: high value predictions for human-like sounds and low value predictions for 
                                         non-human-like sounds. This, however, proved to be a difficult goal. 
 
-                                    <h5>Evaluation:</h5>
+                                    <h5>Evaluation</h5>
                                     <p class="text-muted">We first show here four examples of the MFCC’s that the model learned and 
                                         was tested on. 
                                     </p>
@@ -1324,7 +1324,7 @@
                                         a human (left) and our mouth robot (right)
                                     </p>
                                     
-                                    <h6>Training and Testing on Robot MFCC's:</h6>
+                                    <h6>Training and Testing on Robot MFCC's</h6>
                                     <p class="text-muted">We first split the 1,120 robot MFCC's with 80% (880 MFCC's) for training and 
                                         20% (220 MFCC's) for validation. When trained on 880 robot audio signals, the validation 
                                         accuracy was 92.4% as shown in Fig. 9. This proves the model can successfully classify robot 
@@ -1337,7 +1337,7 @@
                                         robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, Epochs = 30, 
                                         Batchsize = 20)</p>
 
-                                    <h6>Training on Human MFCC's and Testing on Robot MFCC's:</h6>
+                                    <h6>Training on Human MFCC's and Testing on Robot MFCC's</h6>
                                     <p class="text-muted">For this experiment, we used all 4,920 human MFCC's for training and 
                                         validated the model using all 1,120 robot MFCC's. This time, the model had difficulty 
                                         recognizing features in the validation set and yielded a 25.00% accuracy.
@@ -1366,8 +1366,8 @@
                                         validated using robot MFCC's (Hyperparameters used: Adam optimizer, Learning rate = 0.0001, 
                                         Epochs = 30, Batchsize = 20)</p>
 
-                                    <h5>Conclusion:</h5>
-                                    <h6>Future Work:</h6>
+                                    <h5>Conclusion</h5>
+                                    <h6>Future Work</h6>
                                     <p class="text-muted">As this was only a semester long project, we weren't able to run all the 
                                         experiments we wanted to. For future work, we would look more into updating the hardware 
                                         by either replacing the bagpipe reed with a sound generation mechanism with a larger span of 
@@ -1387,7 +1387,7 @@
                                         agent.
                                     </p>
 
-                                    <h6>Final Word:</h6>
+                                    <h6>Final Word</h6>
                                     <p class="text-muted">This is certainly a unique problem and this project is far from complete. 
                                         Although the results yielded accuracy lower than we had hoped, we were happy to have chosen
                                         a challenging project and learned from the time we spent working on it.  
@@ -1429,7 +1429,7 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gastrostomy/1.jpg" alt="..." />
                                        
-                                    <h5>Introduction:</h5>
+                                    <h5>Introduction</h5>
                                     <p class="text-muted">About half a million children and adults in the United States rely on feeding 
                                         tubes everyday. There are over 350 conditions and diseases in which enteral feeding may be necessary. 
                                         Enteral nutrition, or the method of delivering nutrition directly to the stomach 
@@ -1452,8 +1452,8 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/gastrostomy/2.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 1: Schematic of Gastrostomy Skin Level Device</p>
 
-                                    <h5>Design:</h5>
-                                    <h6>Research and Benchmarking:</h6>
+                                    <h5>Design</h5>
+                                    <h6>Research and Benchmarking</h6>
                                     <p class="text-muted">Following the human-centered design process I first researched and 
                                         subsequently defined the problem to provide a basis for development. As part of the research 
                                         phase, I developed a customer requirements table along with accompanying functional requirements, 
@@ -1492,7 +1492,7 @@
                                     <p class="item-intro text-muted">Fig. 3: SLD design involving silicone “pleat” stabilizers and 
                                         non-balloon internal bolster (U.S. Patent No. 8,951,232)</p>
                                     
-                                    <h6>Prototyping:</h6>
+                                    <h6>Prototyping</h6>
                                     <p class="text-muted">The design process focused on addressing all customer needs especially those 
                                         involving patient safety and reliability. As part of the design process, several 3D printed 
                                         prototypes of the design were developed, tested, and iterated upon. One of the first prototypes
@@ -1543,7 +1543,7 @@
                                     <p class="item-intro text-muted">Fig. 6: Schematic of Second Prototype Cap with labels (left) and 
                                         dimensions, in mm (right)</p>
                                     
-                                    <h5>Evaluation:</h5>
+                                    <h5>Evaluation</h5>
                                     <p class="text-muted">After designing the new model in Solidworks, it was crucial to investigate 
                                         areas of stress concentration for this device as the internal bolster is subject to unique 
                                         force distributions in order to stretch out to fit through the stoma.
@@ -1568,7 +1568,7 @@
                                     <p class="item-intro text-muted">Fig. 8: Testing of 3D printed prototype for insertion ability 
                                         with thin metal rod</p>
 
-                                    <h6>Risk Analysis:</h6>
+                                    <h6>Risk Analysis</h6>
                                     <p class="text-muted">Lastly, an FMEA risk analysis table was developed to assess risks in the 
                                         proposed solution and serve as a tool to further update iterated designs.
                                     </p>
@@ -1578,7 +1578,7 @@
                                     <p class="item-intro text-muted">Fig. 9: Failure Modes and Effects Analysis (FMEA) for Minimum 
                                         Viable Product (MVP)</p>
 
-                                    <h5>Conclusion:</h5>
+                                    <h5>Conclusion</h5>
                                     <p class="text-muted">Initial testing of my design showed that the prototype could address several of the customer 
                                         requirements I outlined at the beginning of the design process. However, by subjecting the prototype 
                                         to more rigorous testing conditions, like an environment that simulates gastric fluid, I could further 
@@ -1621,7 +1621,7 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/1.png" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">
                                         Kelp forests are currently diminishing off the western coast of the United States and Mexico due to 
                                         warming waters and overfishing of white abalone. Kelp forests reduce wave energy therefore decreasing 
@@ -1637,7 +1637,7 @@
                                         vulnurable to natural disasters, kelp bed recovery efforts include aquaculture of giant kelp
                                     </p>
                                     
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">To address the overgrowth of algae due to the decreasing population of 
                                         white abalone, my team and I designed and built a prototype algae filtration system that mimics 
                                         the abilities of white abalone to clean rock surfaces of algae. The system would work in conjunction 
@@ -1647,7 +1647,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/2.PNG" alt="..." />
                                     <p class="item-intro text-muted">Fig. 2: Full CAD Assembly of System</p>
 
-                                    <h5>Design:</h5>
+                                    <h5>Design</h5>
                                     <h6>Overview</h6>
                                     <p class="text-muted">Our algae filtration system is designed to be secured to 
                                         the rock surfaces in endangered kelp forests via a strong suction cup. It will then be able 
@@ -1678,7 +1678,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/4.PNG" alt="..." />
                                     <p class="item-intro text-muted">Fig. 4: Interior components of system</p>
 
-                                    <h6>Prototype:</h6>
+                                    <h6>Prototype</h6>
                                     <p class="text-muted">The system prototype is a 3D printed 1:2 scaled version of the full system 
                                         and includes two DC motors, one suction cup, a 2 inch diameter round brush, and a turbine. The 
                                         battery does not fit inside the scaled enclosure so the DC motors were attached to a 12V power 
@@ -1688,7 +1688,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/5.jpg" alt="..." />
                                     <p class="item-intro text-muted">Fig. 5: 1:2 Scaled prototype</p>
 
-                                    <h6>Challenges:</h6>
+                                    <h6>Challenges</h6>
                                     <p class="text-muted">I thought it would be most meaningful to our presentation to test the 
                                         prototype underwater but this meant the DC motors had to be waterproofed. I originally 
                                         thought sticking them in a food storage container would be adequate but containers I found 
@@ -1703,7 +1703,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/6.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6: Waterproofing motor</p>   
 
-                                    <h5>Evaluation:</h5>
+                                    <h5>Evaluation</h5>
                                     <p class="text-muted">The prototype was tested in a clear container filled with water. The 
                                         wires from each motor were clamped to the side of the container to ensure they do not come 
                                         in contact with the water. Each motor was connected to a 12V power adapter to test whether the 
@@ -1712,7 +1712,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/algae/8.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 7: System running underwater</p>
 
-                                    <h5>Conclusion:</h5>
+                                    <h5>Conclusion</h5>
                                     <p class="text-muted">In conclusion, our prototype algae filtration system, designed to combat algae 
                                         overgrowth resulting from the declining white abalone population, has shown promising initial success. 
                                         However, we recognize the need for more comprehensive testing in an environment more similar to the 
@@ -1759,7 +1759,7 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/globe/production.JPG" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">This project was part of Rensselaer 
                                         Polytechnic Institute's (RPI) Manufacturing Processes & Systems (MPS) course 
                                         focused on exposing students to common manufacturing techniques used in industry (e.g. plastic 
@@ -1767,7 +1767,7 @@
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/globe/1.JPG" alt="..." />
                                     
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">Each MPS team was tasked with designing a product and writing a technical 
                                         data package (TDP) outlining every step of the manufacturing process for the product with the intention that 
                                         if chosen for MPS II, the second half of the course, 500 units will be produced from raw materials in the RPI Manufacturing Innovation 
@@ -1779,7 +1779,7 @@
                                         including part transfer and quality control, and a brief description of how all 500 of the 
                                         product will be packaged.</p>
 
-                                    <h5>Design:</h5>
+                                    <h5>Design</h5>
                                     <h6>Overview</h6>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/globe/2.png" alt="..." />
@@ -1880,7 +1880,7 @@
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/electrode/1.jpg" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">I designed and built this testing setup for the Panat Lab at Carnegie Mellon 
                                         University. In a collaborative effort, the lab is developing a microelectrode array, the 
                                         <a href="https://www.science.org/doi/full/10.1126/sciadv.abj4853">CMU Array</a>, fabricated from 
@@ -1908,7 +1908,7 @@
                                         </div>
                                     </div>
 
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">The array can be tested in vivo using neural activity (Fig. 2) from anesthetized 
                                         mice but benchtop testing allows for neural recording sessions using a stimulating electrode 
                                         to simulate neural activity (Fig. 3) which can reduce variability between experiments and eliminates 
@@ -1935,7 +1935,7 @@
                                         </div>
                                     </div>
 
-                                    <h5>Design:</h5>
+                                    <h5>Design</h5>
                                     <p class="text-muted">To address the first objective, I designed a subassembly for the probe. Two 
                                         small translational stages (Thorlabs DT12) are used: one is mounted to the elevated stage and 
                                         allows movement of the arm in the x, and one is mounted to the arm and allows movement of 
@@ -2024,7 +2024,7 @@
                                         but potential future evaluations could involve rigorous testing of long-term stability, real-time 
                                         data processing capabilities, and correlation studies with in vivo experiments.</p>
                                     
-                                    <h5>Conclusion:</h5>
+                                    <h5>Conclusion</h5>
                                     <p class="text-muted">
                                         The microelectrode array testing setup I designed and built allows for benchtop testing with a stimulating 
                                         electrode, reducing variability and eliminating the need for live animals.  
@@ -2063,13 +2063,13 @@
                                     
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/1.jpg" alt="..." />
                                     
-                                    <h5>Background:</h5>
+                                    <h5>Background</h5>
                                     <p class="text-muted">At one of my internships I sat at a desk right next to an aisleway which sometimes
                                         got very busy and distracting. I had this idea that I wanted some kind of separator that also doubled 
                                         as an organizer for some of the tools I used everyday. None of the desk organizers I could find on 
                                         Amazon were quite what I wanted so when I got home I quickly modeled my idea.</p>
 
-                                    <h5>Objectives:</h5>
+                                    <h5>Objectives</h5>
                                     <p class="text-muted">I wanted the design to have an elevated surface for my plant to sit on. 
                                         This, along with compartments to organize my desk items, would act as a separator 
                                         between my desk and the aisleway next to my desk. I also wanted the freedom to adjust the size of 
@@ -2081,7 +2081,7 @@
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/redwood/3.jpg" alt="..." />
                                     <p class="item-intro text-muted">Fig. 2: Visualization of two sliding compartments</p>
                                     
-                                    <h5>Approach:</h5>
+                                    <h5>Approach</h5>
                                     <p class="text-muted">I used repurposed redwood from an old play structure in my backyard that my dad 
                                         had recently dissasembled. We first rip cut large pieces of the wood such that they were the correct width
                                         and depth for the boards I needed. I then used the table saw to cut grooves in the vertical standing 
@@ -2168,7 +2168,7 @@
                                         CNC machining and it is made from Aluminum 6065. 
                                     </p>
 
-                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/implant/2.png" alt="..." />
+                                    <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/implant/2.PNG" alt="..." />
                                     <p class="item-intro text-muted">Fig. 2: Baseplate designed for CNC machining</p>
 
                                     <p class="text-muted">The baseplate includes countersunk mounting holes to fasten the top and bottom plates together, 
@@ -2212,7 +2212,7 @@
                                         </div>
                                     </div>
                                     <p class="item-intro text-muted">Fig. 5: Enclosure designed for laser cutting and provides white 
-                                        backdrop and controlled lightning for all images</p>
+                                        backdrop and controlled lighting for all images</p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/implant/10.png" alt="..." />
                                     <p class="item-intro text-muted">Fig. 6: Angled board camera mount orients board camera at 45 degrees
@@ -2222,7 +2222,7 @@
                                     <p class="text-muted">I installed the fully assembled imaging station on the production line after 
                                         recieving the machined parts (baseplates and camera tower), integrated the motorized stage and 
                                         cameras with a PC, and developed the control program to capture, stitch, and automatically upload 
-                                        all required images to the database.     
+                                        all images to the database.     
                                     </p>
 
                                     <img class="img-fluid d-block mx-auto" src="assets/img/portfolio/implant/1.jpg" alt="..." />

@@ -11705,7 +11705,7 @@ header.masthead .masthead-heading {
 }
 .timeline .timeline-body > ul,
 .timeline .timeline-body > p {
-  margin-bottom: 0rem;
+  margin-bottom: 1rem;
 }
 
 @media (min-width: 768px) {
@@ -11866,4 +11866,19 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   font-size: 0.9rem;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+}
+
+.callout-blurb {
+  background-color: rgba(222, 222, 222, 0.5); /* solid rectangle color */
+  color: #555;
+  padding: 12px 14px; /* some internal spacing */
+  border-radius: 6px; /* rounded corners */
+  margin-bottom: 8px;
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji",
+               "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 400;
+  font-size: 0.875rem;
+  line-height: 1.5;
 }

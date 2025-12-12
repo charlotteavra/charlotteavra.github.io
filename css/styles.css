@@ -11790,6 +11790,18 @@ header.masthead .masthead-heading {
     padding: 0 20px 20px 20px;
   }
 }
+
+.timeline-text-muted {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
+               Roboto, "Helvetica Neue", Arial, sans-serif,
+               "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
+               "Noto Color Emoji";
+  color: #6c757d;        
+  font-weight: 400;      
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
 .team-member {
   margin-bottom: 3rem;
   text-align: center;
@@ -11802,6 +11814,15 @@ header.masthead .masthead-heading {
 .team-member h4, .team-member .h4 {
   margin-top: 1.5rem;
   margin-bottom: 0;
+}
+.team-member-text {
+  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+    "Segoe UI Symbol", "Noto Color Emoji";
+  font-weight: 300; 
+  line-height: 1.5;
+  font-size: 1rem; 
+  color: #000 !important; 
 }
 
 .img-brand {
@@ -11869,10 +11890,10 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .callout-blurb {
-  background-color: rgba(222, 222, 222, 0.5); /* solid rectangle color */
+  background-color: rgba(222, 222, 222, 0.5);
   color: #555;
-  padding: 12px 14px; /* some internal spacing */
-  border-radius: 6px; /* rounded corners */
+  padding: 12px 14px;
+  border-radius: 10px;
   margin-bottom: 8px;
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI",
                Roboto, "Helvetica Neue", Arial, sans-serif,
